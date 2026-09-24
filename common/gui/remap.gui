@@ -1,0 +1,47 @@
+// remap.gui.dso
+%guiContent = new GuiControl(Name : RemapGui)
+{
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 8";
+	Visible = "1";
+	helpTag = "0";
+	new GuiControl(Name : RemapDlg)
+	{
+		Profile = "GuiWindowProfile";
+		HorizSizing = "relative";
+		VertSizing = "relative";
+		Position = "213 213";
+		Extent = "243 64";
+		MinExtent = "8 8";
+		Visible = "1";
+		helpTag = "0";
+		new GuiTextCtrl(Name : RemapText)
+		{
+			Profile = "GuiTextProfile";
+			HorizSizing = "center";
+			VertSizing = "center";
+			Position = "2 21";
+			Extent = "243 20";
+			MinExtent = "8 8";
+			Visible = "1";
+			helpTag = "0";
+			text = "Re-bind control...";
+			maxLength = "255";
+		}
+		new GuiInputCtrl(Name : RemapInput)
+		{
+			Profile = "GuiInputCtrlProfile";
+			HorizSizing = "relative";
+			VertSizing = "relative";
+			Position = "0 0";
+			Extent = "243 64";
+			MinExtent = "8 8";
+			Visible = "1";
+			helpTag = "0";
+		}
+	}
+}

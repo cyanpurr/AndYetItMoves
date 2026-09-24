@@ -1,0 +1,126 @@
+// MessageBoxCustomDlg.gui.dso
+%guiContent = new GuiControl(Name : MessageBoxCustomDlg)
+{
+	canSaveDynamicFields = "0";
+	isContainer = "1";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "width";
+	VertSizing = "height";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 8";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	langTableMod = "Default";
+	new GuiWindowCtrl(Name : MBCustomFrame)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "GuiWindowProfile";
+		HorizSizing = "relative";
+		VertSizing = "center";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 130";
+		Extent = "640 220";
+		MinExtent = "48 92";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		maxLength = "255";
+		resizeWidth = "1";
+		resizeHeight = "1";
+		canMove = "1";
+		canClose = "0";
+		canMinimize = "0";
+		canMaximize = "0";
+		minSize = "50 50";
+		new GuiMLTextCtrl(Name : MBCustomText)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "GuiMediumTextProfile";
+			HorizSizing = "center";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "70 50";
+			Extent = "500 23";
+			MinExtent = "8 8";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			lineSpacing = "2";
+			allowColorChars = "0";
+			maxChars = "-1";
+		}
+		new GuiControl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "1";
+			Profile = "GuiTransparentProfile";
+			HorizSizing = "center";
+			VertSizing = "top";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "20 100";
+			Extent = "600 100";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			new GuiBitmapButtonTextCtrl(Name : MBCustomTextA)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "GuiButtonProfile";
+				HorizSizing = "right";
+				VertSizing = "top";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "50 20";
+				Extent = "500 28";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "MessageCallback(MessageBoxCustomDlg,MessageBoxCustomDlg.yesCallback);";
+				tooltipprofile = "GuiDefaultProfile";
+				hovertime = "1000";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+			}
+			new GuiBitmapButtonTextCtrl(Name : MBCustomTextB)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "GuiButtonProfile";
+				HorizSizing = "right";
+				VertSizing = "top";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "50 71";
+				Extent = "500 28";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "MessageCallback(MessageBoxCustomDlg,MessageBoxCustomDlg.noCallback);";
+				tooltipprofile = "GuiDefaultProfile";
+				hovertime = "1000";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+			}
+		}
+	}
+}

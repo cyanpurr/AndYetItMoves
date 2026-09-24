@@ -1,0 +1,29 @@
+// FrameOverlayGui.gui.dso
+%guiContent = new GuiControl(Name : FrameOverlayGui)
+{
+	Profile = "GuiModelessDialogProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 8";
+	Visible = "True";
+	setFirstResponder = "True";
+	Modal = "false";
+	helpTag = "0";
+	noCursor = "1";
+	new GuiConsoleTextCtrl(Name : TextOverlayControl)
+	{
+		Profile = "GuiTextProfile";
+		HorizSizing = "right";
+		VertSizing = "bottom";
+		Position = "5 5";
+		Extent = "130 18";
+		MinExtent = "130 18";
+		Visible = "True";
+		setFirstResponder = "True";
+		Modal = "True";
+		helpTag = "0";
+		expression = "10";
+	}
+}

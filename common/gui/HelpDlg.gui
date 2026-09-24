@@ -1,0 +1,97 @@
+// HelpDlg.gui.dso
+%guiContent = new GuiControl(Name : HelpDlg)
+{
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 8";
+	Visible = "1";
+	helpTag = "0";
+	new GuiWindowCtrl(Name : "")
+	{
+		Profile = "GuiWindowProfile";
+		HorizSizing = "center";
+		VertSizing = "center";
+		Position = "32 40";
+		Extent = "575 400";
+		MinExtent = "300 200";
+		Visible = "1";
+		text = "Help";
+		maxLength = "255";
+		resizeWidth = "1";
+		resizeHeight = "1";
+		canMove = "1";
+		canClose = "1";
+		canMinimize = "1";
+		canMaximize = "1";
+		minSize = "450 400";
+		closeCommand = "Canvas.popDialog(HelpDlg);";
+		helpTag = "0";
+		new GuiScrollCtrl(Name : "")
+		{
+			Profile = "GuiScrollProfile";
+			HorizSizing = "right";
+			VertSizing = "height";
+			Position = "8 26";
+			Extent = "132 363";
+			MinExtent = "8 8";
+			Visible = "1";
+			willFirstRespond = "1";
+			hScrollBar = "alwaysOff";
+			vScrollBar = "dynamic";
+			constantThumbHeight = "0";
+			childMargin = "0 0";
+			helpTag = "0";
+			new GuiTextListCtrl(Name : HelpFileList)
+			{
+				Profile = "GuiTextListProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				Position = "2 2";
+				Extent = "128 16";
+				MinExtent = "8 8";
+				Visible = "1";
+				enumerate = "0";
+				resizeCell = "1";
+				columns = "0";
+				fitParentWidth = "1";
+				clipColumnText = "0";
+				entryCount = "1";
+				fileName0 = "common/help/2. License.hfl";
+				helpTag = "0";
+			}
+		}
+		new GuiScrollCtrl(Name : "")
+		{
+			Profile = "GuiScrollProfile";
+			HorizSizing = "width";
+			VertSizing = "height";
+			Position = "146 26";
+			Extent = "420 363";
+			MinExtent = "8 8";
+			Visible = "1";
+			willFirstRespond = "1";
+			hScrollBar = "alwaysOff";
+			vScrollBar = "alwaysOn";
+			constantThumbHeight = "0";
+			childMargin = "0 0";
+			helpTag = "0";
+			new GuiMLTextCtrl(Name : HelpText)
+			{
+				Profile = "GuiMLTextProfile";
+				HorizSizing = "width";
+				VertSizing = "bottom";
+				Position = "2 2";
+				Extent = "402 177";
+				MinExtent = "8 8";
+				Visible = "1";
+				lineSpacing = "2";
+				allowColorChars = "0";
+				maxChars = "-1";
+				helpTag = "0";
+			}
+		}
+	}
+}

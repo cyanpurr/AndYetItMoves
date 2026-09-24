@@ -1,0 +1,182 @@
+// chatGui.gui.dso
+new GuiWindowCtrl(Name : chatGui)
+{
+	Profile = "GuiWindowProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	Position = "25 20";
+	Extent = "510 306";
+	MinExtent = "8 2";
+	Visible = "1";
+	text = "Torque Game Builder Chat - Turn Based Network Test";
+	maxLength = "255";
+	resizeWidth = "1";
+	resizeHeight = "1";
+	canMove = "1";
+	canClose = "1";
+	canMinimize = "1";
+	canMaximize = "1";
+	minSize = "50 50";
+	new GuiTextEditCtrl(Name : chatEditText)
+	{
+		Profile = "GuiTextEditProfile";
+		HorizSizing = "right";
+		VertSizing = "bottom";
+		Position = "77 282";
+		Extent = "339 18";
+		MinExtent = "8 2";
+		Visible = "1";
+		maxLength = "255";
+		historySize = "0";
+		password = "0";
+		tabComplete = "0";
+		sinkAllKeyEvents = "0";
+	}
+	new GuiButtonCtrl(Name : "")
+	{
+		Profile = "GuiButtonProfile";
+		HorizSizing = "right";
+		VertSizing = "bottom";
+		Position = "417 282";
+		Extent = "90 22";
+		MinExtent = "8 2";
+		Visible = "1";
+		Command = "chatGui.send();";
+		Accelerator = "return";
+		text = "Send";
+		groupNum = "-1";
+		buttonType = "PushButton";
+	}
+	new GuiScrollCtrl(Name : chatTextScroll)
+	{
+		Profile = "GuiScrollProfile";
+		HorizSizing = "right";
+		VertSizing = "bottom";
+		Position = "6 25";
+		Extent = "409 251";
+		MinExtent = "8 2";
+		Visible = "1";
+		willFirstRespond = "1";
+		hScrollBar = "alwaysOn";
+		vScrollBar = "alwaysOn";
+		constantThumbHeight = "0";
+		childMargin = "0 0";
+		new GuiMessageVectorCtrl(Name : chatMessageText)
+		{
+			Profile = "GuiDefaultProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "2 2";
+			Extent = "387 228";
+			MinExtent = "8 2";
+			Visible = "1";
+			lineSpacing = "0";
+			lineContinuedIndex = "10";
+			matchColor = "0 0 255 255";
+			maxColorIndex = "9";
+		}
+	}
+	new GuiScrollCtrl(Name : chatClientScroll)
+	{
+		Profile = "GuiScrollProfile";
+		HorizSizing = "right";
+		VertSizing = "bottom";
+		Position = "419 25";
+		Extent = "84 251";
+		MinExtent = "8 2";
+		Visible = "1";
+		willFirstRespond = "1";
+		hScrollBar = "alwaysOff";
+		vScrollBar = "dynamic";
+		constantThumbHeight = "0";
+		childMargin = "0 0";
+		new GuiTextListCtrl(Name : chatClientList)
+		{
+			Profile = "GuiTextListProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "2 2";
+			Extent = "80 16";
+			MinExtent = "8 2";
+			Visible = "1";
+			enumerate = "0";
+			resizeCell = "1";
+			columns = "0";
+			fitParentWidth = "1";
+			clipColumnText = "0";
+		}
+	}
+	new GuiButtonCtrl(Name : "")
+	{
+		Profile = "GuiButtonProfile";
+		HorizSizing = "right";
+		VertSizing = "bottom";
+		Position = "4 281";
+		Extent = "69 22";
+		MinExtent = "8 2";
+		Visible = "1";
+		Command = "chatGui.quit();";
+		text = "Quit";
+		Accelerator = "escape";
+		groupNum = "-1";
+		buttonType = "PushButton";
+	}
+}
+function chatGui::onWake(%this)
+{
+	if (isObject(chatVectorText))
+	{
+		chatMessageText.detach();
+		chatVectorText.delete();
+	}
+	new MessageVector(Name : chatVectorText);
+	chatMessageText.attach(chatVectorText);
+	chatVectorText.clear();
+	chatClientList.clear();
+	echo("getting clients");
+	%this.getClients();
+	commandToServer(hatGui);
+	return;
+}
+function chatGui::onSleep(%this)
+{
+	if (local)
+	{
+		sendChatClosed();
+	}
+	else
+	{
+		commandToServer(ile);
+	}
+	return;
+}
+function chatGui::Send(%this)
+{
+	%text = chatEditText.getValue();
+	commandToServer(ndowProfile, %text);
+	chatEditText.setValue("");
+	return;
+}
+function chatGui::getClients(%this)
+{
+	$waitingForList = 1;
+	commandToServer(zSizing);
+	return;
+}
+function chatGui::onGetList(%this)
+{
+	$waitingForList = 0;
+	%count = $clientChatConnectionCount;
+	%i = 0;
+	while (%i < %count)
+	{
+		clientCmdupdateChatClient(contents[%i]);
+		%i = %i + 1.0;
+	}
+	return;
+}
+function chatGui::Quit(%this)
+{
+	Canvas.popDialog(chatGui);
+	return;
+}

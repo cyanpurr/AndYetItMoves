@@ -1,0 +1,127 @@
+// splashWristStrap.gui.dso
+new GuiFadeinBitmapCtrl(Name : SplashWristStrap)
+{
+	canSaveDynamicFields = "0";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	Position = "0 0";
+	Extent = "800 600";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	hovertime = "1000";
+	wrap = "0";
+	fadeinTime = "500";
+	waitTime = "100000";
+	fadeoutTime = "500";
+	done = "0";
+	bitmap = "";
+	noCursor = "1";
+}
+function loadWristStrap()
+{
+	echo("loading wriststrap" SPC SplashWristStrap);
+	Canvas.setContent(SplashWristStrap);
+	return;
+}
+function SplashWristStrap::onWake(%this)
+{
+	echo("SplashWristStrap is waking up" SPC %this);
+	if ($WII)
+	{
+		GlobalActionMap.bindCmd(wiimote0, anykey, "SplashWristStrap.onSkip();", "");
+		GlobalActionMap.bindCmd(classic, anykey, "SplashWristStrap.onSkip();", "");
+	}
+	else
+	{
+		GlobalActionMap.bindCmd(keyboard, anykey, "SplashWristStrap.onSkip();", "");
+	}
+	%this.enableSkip = "0";
+	wiiHomeMenuAllowed("0", "0");
+	%this.splash = "0";
+	%this.showSplashA();
+	%this.schedule("2000", "enableSkip");
+	return;
+}
+function SplashWristStrap::enableSkip(%this)
+{
+	%this.enableSkip = "1";
+	wiiHomeMenuAllowed("0", "1");
+	return;
+}
+function SplashWristStrap::showSplashA(%this)
+{
+	%this.splash = splash + 1.0;
+	%res = getRes();
+	if (getWord(%res, "0") $= "854")
+	{
+		%this.setBitmap(L($IMAGE_WIISTRAP_A_WIDE));
+	}
+	else
+	{
+		%this.setBitmap(L($IMAGE_WIISTRAP_A));
+	}
+	echo("fuck you splashA: we got this text" SPC L($IMAGE_WIISTRAP_A) SPC "this bitmap" SPC bitmap);
+	if (splash == 1.0)
+	{
+		%this.splashSchedule = %this.schedule("5500", "showSplashB");
+	}
+	if (splash == 3.0)
+	{
+		%this.splashSchedule = %this.schedule("5000", "showSplashB");
+	}
+	return;
+}
+function SplashWristStrap::showSplashB(%this)
+{
+	%this.splash = splash + 1.0;
+	%res = getRes();
+	if (getWord(%res, "0") $= "854")
+	{
+		%this.setBitmap(L($IMAGE_WIISTRAP_B_WIDE));
+	}
+	else
+	{
+		%this.setBitmap(L($IMAGE_WIISTRAP_B));
+	}
+	echo("splashB: we got this text" SPC L($IMAGE_WIISTRAP_B) SPC "this bitmap" SPC bitmap);
+	if (splash == 2.0)
+	{
+		%this.splashSchedule = %this.schedule("5000", "showSplashA");
+	}
+	else
+	{
+		if (splash == 4.0)
+		{
+			%this.splashSchedule = %this.schedule("5000", "done");
+		}
+	}
+	return;
+}
+function SplashWristStrap::done(%this)
+{
+	if ($WII)
+	{
+		GlobalActionMap.unbind(wiimote0, anykey);
+		GlobalActionMap.unbind(classic, anykey);
+	}
+	else
+	{
+		GlobalActionMap.unbind(keyboard, anykey);
+	}
+	%this.fadeOut();
+	echo("waitTime" SPC waitTime SPC "splash" SPC splash SPC "timesincestart" SPC getTimeSinceStart(splashSchedule) SPC "schedule" SPC splashSchedule);
+	cancel(splashSchedule);
+	%this.splashSchedule = schedule("800", "0", "onWristStrapDone");
+	return;
+}
+function SplashWristStrap::onSkip(%this, )
+{
+	debugEcho("onSkip" SPC enableSkip);
+	if (enableSkip)
+	{
+		%this.done();
+	}
+	return;
+}
