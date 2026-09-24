@@ -1,0 +1,491 @@
+// statistics.gui.dso
+%guiContent = new GuiControl(Name : menu_statistics)
+{
+	canSaveDynamicFields = "0";
+	isContainer = "1";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	Position = "0 0";
+	Extent = "800 600";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	hovertime = "1000";
+	new GuiControl(Name : ctrl_levelDetail_paper)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "center";
+		VertSizing = "height";
+		Position = "108 0";
+		Extent = "584 600";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		new GuiChunkedBitmapCtrl(Name : "")
+		{
+			canSaveDynamicFields = "1";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "relative";
+			VertSizing = "height";
+			Position = "24 0";
+			Extent = "520 600";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background_paper.png"'];
+			useVariable = "0";
+			tile = "1";
+			PositionAbsolute = "1";
+		}
+		new GuiChunkedBitmapCtrl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "right";
+			VertSizing = "height";
+			Position = "0 0";
+			Extent = "64 600";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background_vTransition.png"'];
+			useVariable = "0";
+			tile = "1";
+		}
+		new GuiChunkedBitmapCtrl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "left";
+			VertSizing = "height";
+			Position = "520 0";
+			Extent = "64 600";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background_vTransitionR.png"'];
+			useVariable = "0";
+			tile = "1";
+		}
+	}
+	new GuiControl(Name : ctrl_statistics)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "center";
+		VertSizing = "center";
+		Position = "172 8";
+		Extent = "456 590";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		new GuiBitmapButtonTextCtrl(Name : btn_statistics_last)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			isContainer = "0";
+			Profile = "AyimButtonHeader1Profile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "112 78";
+			Extent = "60 60";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			Command = "menu_statistics.previousTime();";
+			hovertime = "1000";
+			text = "<";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+		}
+		new GuiTextCtrl(Name : lbl_statistics_time)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextCenterProfile";
+			HorizSizing = "relative";
+			VertSizing = "bottom";
+			Position = "0 136";
+			Extent = "112 24";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "00:00:000";
+			maxLength = "1024";
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_statistics_next)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			isContainer = "0";
+			Profile = "AyimButtonHeader1Profile";
+			HorizSizing = "relative";
+			VertSizing = "bottom";
+			Position = "288 78";
+			Extent = "60 60";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			Command = "menu_statistics.nextTime();";
+			hovertime = "1000";
+			text = ">";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+		}
+		new GuiTextCtrl(Name : lbl_statistics_timeDiff)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2CenterProfile";
+			HorizSizing = "center";
+			VertSizing = "bottom";
+			Position = "154 136";
+			Extent = "144 29";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "-00:00:000";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_statistics_timeHeader)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextCenterProfile";
+			HorizSizing = "center";
+			VertSizing = "bottom";
+			Position = "176 96";
+			Extent = "112 24";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "Checkpoint 10";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_statistics_localRank)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextCenterProfile";
+			HorizSizing = "center";
+			VertSizing = "bottom";
+			Position = "12 192";
+			Extent = "432 25";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			text = "Local Rank:";
+			maxLength = "1024";
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_statistics_mainMenu)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "56 505";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			Command = "menu_statistics.goOn(main);";
+			hovertime = "1000";
+			text = "Main Menu";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button1"'];
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_statistics_change)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "MenuAction";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "164 405";
+			Extent = "130 60";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			Command = "menu_statistics.showSubmitQuestion();";
+			hovertime = "1000";
+			text = "Change";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_medium1"'];
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_statistics_replay)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "MenuAction";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "240 505";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			Command = "menu_statistics.goOn(replay);";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "Play Again";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button1"'];
+		}
+		new GuiTextCtrl(Name : lbl_statistics_globalRank)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextCenterProfile";
+			HorizSizing = "center";
+			VertSizing = "bottom";
+			Position = "12 256";
+			Extent = "432 25";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			text = "Global Rank:";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_statistics_localNumber)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2CenterProfile";
+			HorizSizing = "center";
+			VertSizing = "bottom";
+			Position = "12 220";
+			Extent = "432 34";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			text = "4";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_statistics_globalNumber)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2CenterProfile";
+			HorizSizing = "center";
+			VertSizing = "bottom";
+			Position = "12 284";
+			Extent = "432 34";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			text = "12,405";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_statistics_competitorHeader)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2CenterProfile";
+			HorizSizing = "center";
+			VertSizing = "bottom";
+			Position = "24 19";
+			Extent = "408 35";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "You Played Against";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_statistics_name)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimUnicodeMenuTextCenterProfile";
+			HorizSizing = "relative";
+			VertSizing = "bottom";
+			Position = "0 96";
+			Extent = "112 24";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "you";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_statistics_competitorName)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimUnicodeMenuTextCenterProfile";
+			HorizSizing = "relative";
+			VertSizing = "bottom";
+			Position = "344 96";
+			Extent = "112 24";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "competitor";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_statistics_competitorTime)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextCenterProfile";
+			HorizSizing = "relative";
+			VertSizing = "bottom";
+			Position = "344 136";
+			Extent = "112 24";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "00:00:000";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_statistics_submitLine1)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextCenterProfile";
+			HorizSizing = "width";
+			VertSizing = "bottom";
+			Position = "0 360";
+			Extent = "456 25";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "Do you want to submit your time to the";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_statistics_submitLine2)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextCenterProfile";
+			HorizSizing = "width";
+			VertSizing = "bottom";
+			Position = "0 390";
+			Extent = "456 25";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "global online highscores?";
+			maxLength = "1024";
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_statistics_dontSubmit)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "MenuAction";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "8 405";
+			Extent = "130 60";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			Command = "menu_statistics.changeSubmission(3);";
+			hovertime = "1000";
+			text = "Don't Submit";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_medium1"'];
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_statistics_submitTime)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "MenuAction";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "164 405";
+			Extent = "130 60";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			Command = "menu_statistics.changeSubmission(1);";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "Time Only";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_medium1"'];
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_statistics_submitGhost)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "MenuAction";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "320 405";
+			Extent = "130 60";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			Command = "menu_statistics.changeSubmission(2);";
+			hovertime = "1000";
+			text = "Ghost & Time";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_medium1"'];
+		}
+	}
+}

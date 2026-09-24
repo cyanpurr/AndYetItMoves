@@ -1,0 +1,120 @@
+// resetNotification.gui.dso
+%guiContent = new GuiControl(Name : menu_resetNotification)
+{
+	canSaveDynamicFields = "0";
+	isContainer = "1";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	Position = "0 0";
+	Extent = "800 600";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	hovertime = "1000";
+	new GuiBitmapCtrl(Name : ctrl_resetNotification_main)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "center";
+		VertSizing = "center";
+		Position = "150 110";
+		Extent = "500 380";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/dialog_bg1.png"'];
+		wrap = "0";
+		new GuiTextCtrl(Name : lbl_resetNotification_title)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2Profile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "50 50";
+			Extent = "49 29";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			text = "Title";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_resetNotification_question_1)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "50 100";
+			Extent = "208 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			text = "What do You Want To do?";
+			maxLength = "1024";
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_resetNotification_ok)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "top";
+			Position = "260 240";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			Command = "menu_levelDetail.compete();";
+			hovertime = "1000";
+			text = "Yes";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button4"'];
+		}
+		new GuiCheckBoxCtrl(Name : chb_resetNotification_dontShowAgain)
+		{
+			canSaveDynamicFields = "1";
+			isContainer = "0";
+			Profile = "AyimCheckBoxProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "48 184";
+			Extent = "360 56";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			text = "Dont show this warning again";
+			groupNum = "-1";
+			buttonType = "ToggleButton";
+			UseMouseEvents = "0";
+			useInactiveState = "0";
+			dontHideDetail = "1";
+		}
+		new GuiTextCtrl(Name : lbl_resetNotification_question_2)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "50 136";
+			Extent = "208 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			text = "What do You Want To do?";
+			maxLength = "1024";
+		}
+	}
+}

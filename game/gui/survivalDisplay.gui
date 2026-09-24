@@ -1,0 +1,85 @@
+// survivalDisplay.gui.dso
+%guiContent = new GuiControl(Name : survival_display)
+{
+	canSaveDynamicFields = "0";
+	class = "GameMenu";
+	isContainer = "1";
+	Profile = "AyimMenuItemProfile";
+	HorizSizing = "relative";
+	VertSizing = "relative";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	ExtentsAbsolute = "0";
+	BlendColor = "255 255 255 255";
+	Position = "0 0";
+	Extent = "1024 768";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	new GuiBitmapCtrl(Name : bckgrnd_survival)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "left";
+		VertSizing = "bottom";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		ExtentsAbsolute = "0";
+		BlendColor = "255 255 255 255";
+		Position = "819 -70";
+		Extent = "256 150";
+		MinExtent = "80 40";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/timeDisplay.png"'];
+		wrap = "0";
+	}
+	new GuiControl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "left";
+		VertSizing = "bottom";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		ExtentsAbsolute = "0";
+		BlendColor = "255 255 255 255";
+		Position = "768 0";
+		Extent = "256 150";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		new GuiTextCtrl(Name : lbl_survival)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2CenterProfile";
+			HorizSizing = "right";
+			VertSizing = "center";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "75 10";
+			Extent = "176 48";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "Don't Die!";
+			maxLength = "1024";
+		}
+	}
+}

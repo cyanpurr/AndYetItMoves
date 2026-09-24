@@ -1,0 +1,49 @@
+// wiiInstructions.gui.dso
+%guiContent = new GuiControl(Name : menu_instructions)
+{
+	canSaveDynamicFields = "0";
+	isContainer = "1";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	hovertime = "1000";
+	new GuiBitmapCtrl(Name : ctrl_instructions_main)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "center";
+		VertSizing = "center";
+		Position = "131 0";
+		Extent = "395 480";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/dialog_bg2.png"'];
+		wrap = "0";
+		new GuiBitmapCtrl(Name : pic_instructions)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "center";
+			VertSizing = "center";
+			Position = "29 4";
+			Extent = "340 480";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/hints/driver_instructions.png"'];
+			wrap = "0";
+		}
+	}
+}

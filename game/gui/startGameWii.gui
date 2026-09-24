@@ -1,0 +1,1296 @@
+// startGameWii.gui.dso
+%guiContent = new GuiControl(Name : menu_level)
+{
+	canSaveDynamicFields = "1";
+	class = "GameMenu";
+	isContainer = "1";
+	Profile = "AyimMenuItemProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	hovertime = "1000";
+	backButton = "1";
+	new GuiChunkedBitmapCtrl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "width";
+		VertSizing = "height";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 0";
+		Extent = "640 480";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background.png"'];
+		useVariable = "0";
+		tile = "1";
+		new GuiControl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "width";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "0 0";
+			Extent = "640 110";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			new GuiBitmapButtonTextCtrl(Name : tablbl_level_cave)
+			{
+				canSaveDynamicFields = "0";
+				superclass = "menuItem";
+				class = "MenuTab";
+				isContainer = "0";
+				Profile = "AyimButtonProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "0 0";
+				Extent = "168 110";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				Command = "tablbl_level_cave.switchEnvironment(cave);";
+				tooltipprofile = "GuiDefaultProfile";
+				hovertime = "1000";
+				text = "Chapter One";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = ['"~/"', '$DataFolder', '"/images/Menu/tabsVert"'];
+			}
+			new GuiBitmapButtonTextCtrl(Name : tablbl_level_jungle)
+			{
+				canSaveDynamicFields = "0";
+				superclass = "menuItem";
+				class = "MenuTab";
+				isContainer = "0";
+				Profile = "AyimButtonProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "160 0";
+				Extent = "168 110";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				Command = "tablbl_level_jungle.switchEnvironment(jungle);";
+				tooltipprofile = "GuiDefaultProfile";
+				hovertime = "1000";
+				text = "Chapter Two";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = ['"~/"', '$DataFolder', '"/images/Menu/tabsVert"'];
+			}
+			new GuiBitmapButtonTextCtrl(Name : tablbl_level_trip)
+			{
+				canSaveDynamicFields = "0";
+				superclass = "menuItem";
+				class = "MenuTab";
+				isContainer = "0";
+				Profile = "AyimButtonProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "320 0";
+				Extent = "168 110";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				Command = "tablbl_level_trip.switchEnvironment(trip);";
+				tooltipprofile = "GuiDefaultProfile";
+				hovertime = "1000";
+				text = "Chapter Three";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = ['"~/"', '$DataFolder', '"/images/Menu/tabsVert"'];
+			}
+			new GuiBitmapButtonTextCtrl(Name : tablbl_level_epilog)
+			{
+				canSaveDynamicFields = "0";
+				superclass = "menuItem";
+				class = "MenuTab";
+				isContainer = "0";
+				Profile = "AyimButtonProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "480 0";
+				Extent = "168 110";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				Command = "tablbl_level_epilog.switchEnvironment(epilog);";
+				tooltipprofile = "GuiDefaultProfile";
+				hovertime = "1000";
+				text = "Epilog";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = ['"~/"', '$DataFolder', '"/images/Menu/tabsVert"'];
+			}
+		}
+		new GuiControl(Name : ctrl_level_paper)
+		{
+			canSaveDynamicFields = "1";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "width";
+			VertSizing = "relative";
+			SizeMargin = "0 0";
+			PositionAbsolute = "1";
+			Position = "0 80";
+			Extent = "640 400";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			new GuiChunkedBitmapCtrl(Name : "")
+			{
+				canSaveDynamicFields = "1";
+				isContainer = "0";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "relative";
+				VertSizing = "relative";
+				SizeMargin = "0 0";
+				PositionAbsolute = "1";
+				Position = "0 20";
+				Extent = "640 380";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				hovertime = "1000";
+				bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background_paper.png"'];
+				useVariable = "0";
+				tile = "1";
+			}
+			new GuiChunkedBitmapCtrl(Name : "")
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "relative";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "0 0";
+				Extent = "640 64";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				hovertime = "1000";
+				bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background_hTransition.png"'];
+				useVariable = "0";
+				tile = "1";
+			}
+		}
+		new GuiControl(Name : tabBook_level_levels)
+		{
+			canSaveDynamicFields = "1";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "width";
+			VertSizing = "relative";
+			SizeMargin = "0 0";
+			PositionAbsolute = "1";
+			Position = "0 95";
+			Extent = "640 375";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			new GuiControl(Name : tab_level_cave)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "1";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "width";
+				VertSizing = "height";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "0 0";
+				Extent = "640 375";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "0";
+				tooltipprofile = "AyimEmptyProfile";
+				hovertime = "1000";
+				new GuiControl(Name : "")
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "relative";
+					VertSizing = "relative";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "52 15";
+					Extent = "532 354";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					hovertime = "1000";
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 0";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_cave1)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							tooltipprofile = "AyimEmptyProfile";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/cave1"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/cave1"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "180 0";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_cave2)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							tooltipprofile = "AyimEmptyProfile";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/cave2"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/cave2"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 115";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_cave3)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							tooltipprofile = "AyimEmptyProfile";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/cave3"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/cave3"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "180 115";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_cave4)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/cave4"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/cave4"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 230";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_cave)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							text = "Play the whole Cave";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/cave"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/cave"'];
+						}
+					}
+				}
+			}
+			new GuiControl(Name : tab_level_jungle)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "1";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "width";
+				VertSizing = "height";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "0 0";
+				Extent = "640 375";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "0";
+				hovertime = "1000";
+				new GuiControl(Name : "")
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "relative";
+					VertSizing = "relative";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "52 15";
+					Extent = "532 354";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					hovertime = "1000";
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 0";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_jungle1)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/jungle1"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/jungle1"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "180 0";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_jungle2)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/jungle2"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/jungle2"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "360 0";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_jungle3)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/jungle3"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/jungle3"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 115";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_jungle4)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/jungle4"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/jungle4"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "180 115";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_jungle5)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/jungle5"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/jungle5"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "360 115";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_jungle6)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/jungle6"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/jungle6"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 230";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_jungle)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							text = "Play the whole Jungle";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/jungle"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/jungle"'];
+						}
+					}
+				}
+			}
+			new GuiControl(Name : tab_level_trip)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "1";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "width";
+				VertSizing = "height";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "0 0";
+				Extent = "640 375";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "0";
+				hovertime = "1000";
+				new GuiControl(Name : "")
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "relative";
+					VertSizing = "relative";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "52 15";
+					Extent = "532 354";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					hovertime = "1000";
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 0";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_trip1)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/trip1"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/trip1"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "180 0";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_trip2)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/trip2"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/trip2"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "360 0";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_trip3)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/trip3"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/trip3"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 115";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_trip4)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/trip4"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/trip4"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "180 115";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_trip5)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/trip5"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/trip5"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "360 115";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_trip6)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/trip6"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/trip6"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 230";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_trip)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							text = "Play the whole Trip";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/trip"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/trip"'];
+						}
+					}
+				}
+			}
+			new GuiControl(Name : tab_level_epilog)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "1";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "width";
+				VertSizing = "height";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "0 0";
+				Extent = "640 375";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				hovertime = "1000";
+				new GuiControl(Name : "")
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "relative";
+					VertSizing = "relative";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "52 15";
+					Extent = "532 354";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					hovertime = "1000";
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 0";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_credits)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonBonusProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 -1";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							tooltipprofile = "GuiDefaultProfile";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/credits"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/credits"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "180 0";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_finalLevel)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonBonusProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/finalLevel"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/finalLevel"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "360 0";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_elevator)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonBonusProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/elevator"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/elevator"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 115";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_labyrinth)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonBonusProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/labyrinth"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/labyrinth"'];
+						}
+					}
+					new GuiControl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "1";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "180 115";
+						Extent = "172 116";
+						MinExtent = "172 116";
+						canSave = "1";
+						Visible = "1";
+						hovertime = "1000";
+						new GuiBitmapButtonTextCtrl(Name : btn_level_chase)
+						{
+							canSaveDynamicFields = "0";
+							superclass = "menuItem";
+							class = "LevelDetailButton";
+							isContainer = "0";
+							Profile = "AyimLevelButtonBonusProfile";
+							HorizSizing = "center";
+							VertSizing = "center";
+							SizeMargin = "0 0";
+							PositionAbsolute = "0";
+							Position = "0 0";
+							Extent = "172 116";
+							MinExtent = "8 2";
+							canSave = "1";
+							Visible = "1";
+							hovertime = "1000";
+							groupNum = "-1";
+							buttonType = "PushButton";
+							UseMouseEvents = "0";
+							bitmap = ['"~/"', '$DataFolder', '"/images/Menu/levels/chase"'];
+							originalBitmap = ['"game/"', '$DataFolder', '"/images/Menu/levels/chase"'];
+						}
+					}
+				}
+			}
+		}
+	}
+}

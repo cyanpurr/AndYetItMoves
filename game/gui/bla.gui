@@ -1,0 +1,52 @@
+// bla.gui.dso
+%guiContent = new GuiControl(Name : bla)
+{
+	canSaveDynamicFields = "0";
+	isContainer = "1";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "800 600";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	new GuiControl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "GuiDefaultProfile";
+		HorizSizing = "right";
+		VertSizing = "bottom";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "202 138";
+		Extent = "397 236";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		new GuiControl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "1";
+			Profile = "GuiDefaultProfile";
+			HorizSizing = "width";
+			VertSizing = "top";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "49 200";
+			Extent = "288 29";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+		}
+	}
+}

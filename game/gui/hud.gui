@@ -1,0 +1,219 @@
+// hud.gui.dso
+%guiContent = new GuiControl(Name : hud_gui)
+{
+	canSaveDynamicFields = "0";
+	isContainer = "1";
+	Profile = "AyimMenuItemProfile";
+	HorizSizing = "width";
+	VertSizing = "height";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 8";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	new GuiControl(Name : warning_border)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimMenuItemProfile";
+		HorizSizing = "width";
+		VertSizing = "height";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 0";
+		Extent = "640 480";
+		MinExtent = "8 8";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		new GuiBitmapCtrl(Name : wb_top)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "width";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "-20 -20";
+			Extent = "680 40";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/hints/warning_border.jpg"'];
+		}
+		new GuiBitmapCtrl(Name : wb_bottom)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "width";
+			VertSizing = "top";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "-20 460";
+			Extent = "680 40";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/hints/warning_border.jpg"'];
+		}
+		new GuiBitmapCtrl(Name : wb_left)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "right";
+			VertSizing = "height";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "-20 -20";
+			Extent = "40 520";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/hints/warning_border.jpg"'];
+		}
+		new GuiBitmapCtrl(Name : wb_right)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "left";
+			VertSizing = "height";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "620 -20";
+			Extent = "40 520";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/hints/warning_border.jpg"'];
+		}
+	}
+	new GuiControl(Name : hud_container)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimMenuItemProfile";
+		HorizSizing = "width";
+		VertSizing = "height";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 0";
+		Extent = "640 480";
+		MinExtent = "8 8";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		new GuiBitmapCtrl(Name : threshold_marker_1)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "center";
+			VertSizing = "center";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "72 184";
+			Extent = "256 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/hints/threshold_marker.png"'];
+			wrap = "0";
+		}
+		new GuiBitmapCtrl(Name : threshold_marker_2)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "center";
+			VertSizing = "center";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "72 184";
+			Extent = "256 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/hints/threshold_marker.png"'];
+			wrap = "0";
+		}
+		new GuiBitmapCtrl(Name : threshold_marker_2side)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "center";
+			VertSizing = "center";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "72 184";
+			Extent = "256 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/hints/threshold_marker_2side.png"'];
+			wrap = "0";
+		}
+		new GuiBitmapCtrl(Name : rotation_marker)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "center";
+			VertSizing = "center";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "72 184";
+			Extent = "256 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/hints/rotation_marker.png"'];
+			wrap = "0";
+		}
+		new GuiBitmapCtrl(Name : rotation_marker_2side)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "center";
+			VertSizing = "center";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "72 184";
+			Extent = "256 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/hints/rotation_marker_2side.png"'];
+			wrap = "0";
+		}
+	}
+}

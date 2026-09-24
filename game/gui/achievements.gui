@@ -1,0 +1,75 @@
+// achievements.gui.dso
+%guiContent = new GuiControl(Name : menu_achievements)
+{
+	canSaveDynamicFields = "1";
+	isContainer = "1";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "800 600";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	backButton = "1";
+	new GuiChunkedBitmapCtrl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "0";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "relative";
+		VertSizing = "relative";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 0";
+		Extent = "800 600";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background.png"'];
+		useVariable = "0";
+		tile = "1";
+		new GuiControl(Name : ctrl_achievements_main)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "width";
+			VertSizing = "height";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "50 46";
+			Extent = "700 450";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+		}
+	}
+	new GuiTextCtrl(Name : lbl_achievements_title)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "0";
+		Profile = "AyimHeader1Profile";
+		HorizSizing = "right";
+		VertSizing = "bottom";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "50 15";
+		Extent = "700 29";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		text = "Achievements of Username";
+		maxLength = "1024";
+	}
+}

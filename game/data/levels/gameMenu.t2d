@@ -1,0 +1,191 @@
+// gameMenu.t2d.dso
+%levelContent = new t2dSceneGraph(Name : daSceneGraph)
+{
+	canSaveDynamicFields = "1";
+	UseLayerSorting = "1";
+	layerSortMode0 = "Normal";
+	layerSortMode1 = "Normal";
+	layerSortMode2 = "Normal";
+	layerSortMode3 = "Normal";
+	layerSortMode4 = "Normal";
+	layerSortMode5 = "Normal";
+	layerSortMode6 = "Normal";
+	layerSortMode7 = "Normal";
+	layerSortMode8 = "Normal";
+	layerSortMode9 = "Normal";
+	layerSortMode10 = "Normal";
+	layerSortMode11 = "Normal";
+	layerSortMode12 = "Normal";
+	layerSortMode13 = "Normal";
+	layerSortMode14 = "Normal";
+	layerSortMode15 = "Normal";
+	layerSortMode16 = "Normal";
+	layerSortMode17 = "Normal";
+	layerSortMode18 = "Normal";
+	layerSortMode19 = "Normal";
+	layerSortMode20 = "Normal";
+	layerSortMode21 = "Normal";
+	layerSortMode22 = "Normal";
+	layerSortMode23 = "Normal";
+	layerSortMode24 = "Normal";
+	layerSortMode25 = "Normal";
+	layerSortMode26 = "Normal";
+	layerSortMode27 = "Normal";
+	layerSortMode28 = "Normal";
+	layerSortMode29 = "Normal";
+	layerSortMode30 = "Normal";
+	layerSortMode31 = "Normal";
+	DebugRendering = "0";
+	cameraPosition = "0.000000 0.000000";
+	cameraSize = "240.000000 180.000000";
+	new t2dShapeVector(Name : "")
+	{
+		canSaveDynamicFields = "1";
+		size = "413.383 231.394";
+		Layer = "1";
+		BlendColor = "0 0 0 1";
+		BaseVelocityAdaptionFactor = "-1";
+		wantsCollisionCallback = "0";
+		wantsCollisionReceiveCallback = "0";
+		PolyList = "-1.000 -1.000 1.000 -1.000 1.000 1.000 -1.000 1.000";
+		LineColor = "0 0 0 1";
+		fillColor = "0 0 0 1";
+		FillMode = "1";
+		mountID = "2";
+		_behavior0 = "BeSplashScreener	screenGroups	esrb brokenRules bfg tgb_splash loading_image menu_background	screenDuration	4 2.5 2.5 2.5 2.5";
+	}
+	new t2dSceneObjectGroup(Name : tgb_splash)
+	{
+		canSaveDynamicFields = "1";
+		new t2dStaticSprite(Name : "")
+		{
+			imageMap = "quadrate_kreise_grossImageMap";
+			frame = "2";
+			canSaveDynamicFields = "1";
+			Position = "1.058 -4.245";
+			size = "47.299 47.299";
+			Rotation = "270";
+			Layer = "12";
+			BaseVelocityAdaptionFactor = "-1";
+			wantsCollisionCallback = "0";
+			wantsCollisionReceiveCallback = "0";
+			mountID = "3";
+			textureObject = "tex_tgb";
+			_behavior0 = "BeMask	protoObject	None	textureObject	tex_tgb";
+		}
+		new t2dStaticSprite(Name : tex_tgb)
+		{
+			imageMap = "splashTgbImageMap";
+			frame = "0";
+			canSaveDynamicFields = "1";
+			Position = "1.419 -4.583";
+			size = "45.792 45.792";
+			Layer = "31";
+			GraphGroup = "31";
+			CollisionPhysicsSend = "0";
+			CollisionPhysicsReceive = "0";
+			BaseVelocityAdaptionFactor = "-1";
+			wantsCollisionCallback = "0";
+			wantsCollisionReceiveCallback = "0";
+			mountID = "4";
+			_behavior0 = "BeTexture";
+			_behavior1 = "BeDontCollide";
+		}
+	}
+	new t2dSceneObjectGroup(Name : brokenRules)
+	{
+		canSaveDynamicFields = "1";
+		new t2dStaticSprite(Name : tex_brokenRules)
+		{
+			imageMap = "brokenRulesImageMap";
+			frame = "0";
+			canSaveDynamicFields = "1";
+			Position = "-0.774 -5.112";
+			size = "60.000 60.000";
+			Layer = "31";
+			GraphGroup = "31";
+			CollisionPhysicsSend = "0";
+			CollisionPhysicsReceive = "0";
+			BaseVelocityAdaptionFactor = "-1";
+			wantsCollisionCallback = "0";
+			wantsCollisionReceiveCallback = "0";
+			mountID = "5";
+			_behavior0 = "BeDontCollide";
+		}
+	}
+	new t2dSceneObjectGroup(Name : esrb)
+	{
+		canSaveDynamicFields = "1";
+		new t2dStaticSprite(Name : "")
+		{
+			imageMap = "esrbImageMap";
+			frame = "0";
+			canSaveDynamicFields = "1";
+			size = "151.500 90.000";
+			Layer = "2";
+			BaseVelocityAdaptionFactor = "-1";
+			wantsCollisionCallback = "0";
+			wantsCollisionReceiveCallback = "0";
+			mountID = "6";
+		}
+	}
+	new t2dSceneObjectGroup(Name : bfg)
+	{
+		canSaveDynamicFields = "1";
+		new t2dStaticSprite(Name : "")
+		{
+			imageMap = "bfgSplashImageMap";
+			frame = "0";
+			canSaveDynamicFields = "1";
+			size = "61.094 61.094";
+			Layer = "12";
+			GraphGroup = "31";
+			CollisionPhysicsSend = "0";
+			CollisionPhysicsReceive = "0";
+			BaseVelocityAdaptionFactor = "-1";
+			wantsCollisionCallback = "0";
+			wantsCollisionReceiveCallback = "0";
+			mountID = "7";
+			_behavior0 = "BeDontCollide";
+		}
+	}
+	new t2dSceneObjectGroup(Name : menu_background)
+	{
+		canSaveDynamicFields = "1";
+		new t2dStaticSprite(Name : "")
+		{
+			imageMap = "menuBackgroundImageMap";
+			frame = "0";
+			canSaveDynamicFields = "1";
+			size = "320.000 180.000";
+			Layer = "12";
+			GraphGroup = "31";
+			CollisionPhysicsSend = "0";
+			CollisionPhysicsReceive = "0";
+			BaseVelocityAdaptionFactor = "-1";
+			wantsCollisionCallback = "0";
+			wantsCollisionReceiveCallback = "0";
+			mountID = "8";
+			_behavior0 = "BeDontCollide";
+		}
+	}
+	new t2dSceneObjectGroup(Name : loading_image)
+	{
+		canSaveDynamicFields = "1";
+		new t2dStaticSprite(Name : "")
+		{
+			imageMap = "loadingImageMap";
+			frame = "0";
+			canSaveDynamicFields = "1";
+			size = "58.400 58.400";
+			GraphGroup = "31";
+			CollisionPhysicsSend = "0";
+			CollisionPhysicsReceive = "0";
+			BaseVelocityAdaptionFactor = "-1";
+			wantsCollisionCallback = "0";
+			wantsCollisionReceiveCallback = "0";
+			mountID = "9";
+			_behavior0 = "BeDontCollide";
+		}
+	}
+}

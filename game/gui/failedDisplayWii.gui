@@ -1,0 +1,115 @@
+// failedDisplayWii.gui.dso
+%guiContent = new GuiControl(Name : failed_display)
+{
+	canSaveDynamicFields = "0";
+	class = "GameMenu";
+	isContainer = "1";
+	Profile = "AyimMenuItemProfile";
+	HorizSizing = "relative";
+	VertSizing = "relative";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	new GuiBitmapCtrl(Name : bckgrnd_failed)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "left";
+		VertSizing = "bottom";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "435 -20";
+		Extent = "256 150";
+		MinExtent = "80 40";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/timeDisplay.png"'];
+		wrap = "0";
+	}
+	new GuiControl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "left";
+		VertSizing = "bottom";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "384 0";
+		Extent = "256 150";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		new GuiTextCtrl(Name : lbl_failed)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader1CenterRedProfile";
+			HorizSizing = "right";
+			VertSizing = "center";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "80 8";
+			Extent = "176 29";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "Failed!";
+			maxLength = "1024";
+		}
+		new GuiBitmapCtrl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "152 40";
+			Extent = "32 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/minus.png"'];
+			wrap = "0";
+		}
+		new GuiTextCtrl(Name : lbl_failed_reset)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextCenterProfile";
+			HorizSizing = "right";
+			VertSizing = "center";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "88 80";
+			Extent = "168 16";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "to reset";
+			maxLength = "1024";
+		}
+	}
+}

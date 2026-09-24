@@ -1,0 +1,217 @@
+// resetWii.gui.dso
+%guiContent = new GuiControl(Name : menu_reset)
+{
+	canSaveDynamicFields = "0";
+	isContainer = "1";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	new GuiChunkedBitmapCtrl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "0";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "relative";
+		VertSizing = "bottom";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 166";
+		Extent = "640 64";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		bitmap = "~/wiiData/images/Menu/background_hTransition.png";
+		useVariable = "0";
+		tile = "1";
+	}
+	new GuiChunkedBitmapCtrl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "0";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "relative";
+		VertSizing = "relative";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 188";
+		Extent = "640 105";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		bitmap = "~/wiiData/images/Menu/background_paper.png";
+		useVariable = "0";
+		tile = "1";
+	}
+	new GuiChunkedBitmapCtrl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "0";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "relative";
+		VertSizing = "relative";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 248";
+		Extent = "640 64";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		bitmap = "~/wiiData/images/Menu/background_hTransition_flipped.png";
+		useVariable = "0";
+		tile = "1";
+	}
+	new GuiControl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "center";
+		VertSizing = "center";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "8 192";
+		Extent = "624 88";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		new GuiTextCtrl(Name : lbl_reset_minus_1)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2RightProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "0 8";
+			Extent = "208 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "Press";
+			maxLength = "1024";
+		}
+		new GuiBitmapCtrl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "224 8";
+			Extent = "32 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			bitmap = "~/wiiData/images/Menu/minus.png";
+			wrap = "0";
+		}
+		new GuiTextCtrl(Name : lbl_reset_minus_2)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2Profile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "272 8";
+			Extent = "152 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "to really reset";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_reset_plus_1)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2RightProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "0 48";
+			Extent = "208 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "Press";
+			maxLength = "1024";
+		}
+		new GuiBitmapCtrl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "224 48";
+			Extent = "32 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			bitmap = "~/wiiData/images/Menu/plus.png";
+			wrap = "0";
+		}
+		new GuiTextCtrl(Name : lbl_reset_plus_2)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2Profile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "272 48";
+			Extent = "264 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "per continuare a giocare";
+			maxLength = "1024";
+		}
+	}
+}

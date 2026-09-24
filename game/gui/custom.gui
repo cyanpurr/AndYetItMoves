@@ -1,0 +1,131 @@
+// custom.gui.dso
+%guiContent = new GuiControl(Name : menu_custom)
+{
+	canSaveDynamicFields = "0";
+	isContainer = "1";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	Position = "0 0";
+	Extent = "800 600";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	hovertime = "1000";
+	new GuiBitmapCtrl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "center";
+		VertSizing = "center";
+		Position = "205 75";
+		Extent = "390 450";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/dialog_bg2.png"'];
+		wrap = "0";
+		new GuiTextCtrl(Name : lbl_custom)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2Profile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "60 50";
+			Extent = "247 29";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			text = "Performance Settings";
+			maxLength = "1024";
+		}
+		new GuiCheckBoxCtrl(Name : chb_custom_shaders)
+		{
+			canSaveDynamicFields = "0";
+			class = "CustomPerformanceButton";
+			isContainer = "0";
+			Profile = "AyimCheckBoxProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "60 112";
+			Extent = "312 60";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "Button";
+			groupNum = "-1";
+			buttonType = "ToggleButton";
+			UseMouseEvents = "0";
+			useInactiveState = "0";
+		}
+		new GuiCheckBoxCtrl(Name : chb_custom_vSync)
+		{
+			canSaveDynamicFields = "0";
+			class = "CustomPerformanceButton";
+			isContainer = "0";
+			Profile = "AyimCheckBoxProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			Position = "60 172";
+			Extent = "312 60";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "Button";
+			groupNum = "-1";
+			buttonType = "ToggleButton";
+			UseMouseEvents = "0";
+			useInactiveState = "0";
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_custom_ok)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "ButtonOK";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "top";
+			Position = "188 334";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			text = "Create Profile";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button1"'];
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_custom_cancel)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "ButtonCancel";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "top";
+			Position = "24 332";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			hovertime = "1000";
+			text = "quit";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button4"'];
+		}
+	}
+}

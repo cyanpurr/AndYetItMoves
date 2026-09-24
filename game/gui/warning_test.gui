@@ -1,0 +1,112 @@
+// warning_test.gui.dso
+%guiContent = new GuiControl(Name : warning_test)
+{
+	canSaveDynamicFields = "0";
+	isContainer = "1";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "width";
+	VertSizing = "height";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "800 600";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	tooltipprofile = "GuiDefaultProfile";
+	hovertime = "1000";
+	new GuiControl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "GuiDefaultProfile";
+		HorizSizing = "width";
+		VertSizing = "height";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 0";
+		Extent = "800 600";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		new GuiBitmapCtrl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "GuiDefaultProfile";
+			HorizSizing = "width";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "0 0";
+			Extent = "800 20";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			bitmap = "~/gui/";
+			wrap = "0";
+		}
+		new GuiBitmapCtrl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "GuiDefaultProfile";
+			HorizSizing = "right";
+			VertSizing = "height";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "0 20";
+			Extent = "20 560";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			wrap = "0";
+		}
+		new GuiBitmapCtrl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "GuiDefaultProfile";
+			HorizSizing = "left";
+			VertSizing = "height";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "780 20";
+			Extent = "20 560";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			wrap = "0";
+		}
+		new GuiBitmapCtrl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "GuiDefaultProfile";
+			HorizSizing = "width";
+			VertSizing = "top";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "0 580";
+			Extent = "800 20";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			bitmap = "~/gui/";
+			wrap = "0";
+		}
+	}
+}

@@ -1,0 +1,161 @@
+// choiceDialog.gui.dso
+%guiContent = new GuiControl(Name : menu_dialog)
+{
+	canSaveDynamicFields = "0";
+	isContainer = "1";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	ExtentsAbsolute = "0";
+	BlendColor = "255 255 255 255";
+	Position = "0 0";
+	Extent = "1024 768";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	new GuiBitmapCtrl(Name : ctrl_dialog_main)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "center";
+		VertSizing = "center";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		ExtentsAbsolute = "0";
+		BlendColor = "255 255 255 255";
+		Position = "240 168";
+		Extent = "544 432";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/dialog_bg1.png"'];
+		wrap = "0";
+		new GuiTextCtrl(Name : lbl_dialog_title)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2Profile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "50 50";
+			Extent = "49 29";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "Title";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_dialog_question)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "50 100";
+			Extent = "249 32";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "What do You Want To do?";
+			maxLength = "1024";
+		}
+		new GuiCheckBoxCtrl(Name : chb_dialog_choice)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimCheckBoxProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "48 232";
+			Extent = "479 60";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "to be set";
+			groupNum = "-1";
+			buttonType = "ToggleButton";
+			UseMouseEvents = "0";
+			useInactiveState = "0";
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_dialog_1)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "ButtonCancel";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "top";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "158 288";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "No";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button1"'];
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_dialog_2)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "ButtonOK";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "top";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "348 288";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "Yes";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button4"'];
+		}
+	}
+}

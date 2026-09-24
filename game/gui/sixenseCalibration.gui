@@ -1,0 +1,467 @@
+// sixenseCalibration.gui.dso
+%guiContent = new GuiControl(Name : menu_sixenseCalibration)
+{
+	canSaveDynamicFields = "0";
+	isContainer = "1";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "1024 768";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	new GuiControl(Name : ctrl_sixenseCalibrated_centered)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "width";
+		VertSizing = "height";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 0";
+		Extent = "1024 768";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		new GuiBitmapCtrl(Name : ctrl_sixenseCalib_background)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "center";
+			VertSizing = "center";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "128 95";
+			Extent = "768 577";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			bitmap = "~/data/images/Menu/sixense_bg.png";
+			wrap = "0";
+			new GuiBitmapCtrl(Name : pic_sixenseCalibration_2)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "476 56";
+				Extent = "143 299";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				bitmap = "~/data/images/Menu/sixense_controller_2_1.png";
+				wrap = "0";
+			}
+			new GuiBitmapCtrl(Name : pic_sixenseCalibration_1)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "136 57";
+				Extent = "143 299";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				bitmap = "~/data/images/Menu/sixense_controller_1_1.png";
+				wrap = "0";
+			}
+			new GuiControl(Name : ctrl_sixenseCalibration_2)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "1";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "371 330";
+				Extent = "360 154";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				new GuiControl(Name : ctrl_sixenseCalibration_2_1)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "width";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "0 0";
+					Extent = "355 64";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					new GuiTextCtrl(Name : txt_sixenseCalibration_2_1_1)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterGreyProfile";
+						HorizSizing = "width";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 20";
+						Extent = "354 20";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "Press any button";
+						maxLength = "1024";
+					}
+					new GuiTextCtrl(Name : txt_sixenseCalibration_2_1_2)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterGreyProfile";
+						HorizSizing = "width";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 42";
+						Extent = "354 20";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "to activate the controller.";
+						maxLength = "1024";
+					}
+					new GuiBitmapCtrl(Name : pic_sixenseCalibration_check_2_1)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "center";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "145 0";
+						Extent = "64 64";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						bitmap = "~/data/images/Menu/checkmark.png";
+						wrap = "0";
+					}
+				}
+				new GuiControl(Name : ctrl_sixenseCalibration_2_2)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "width";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "0 70";
+					Extent = "355 64";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					new GuiTextCtrl(Name : txt_sixenseCalibration_2_2_1)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterGreyProfile";
+						HorizSizing = "width";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 20";
+						Extent = "354 20";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "Press any button";
+						maxLength = "1024";
+					}
+					new GuiTextCtrl(Name : txt_sixenseCalibration_2_2_2)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterGreyProfile";
+						HorizSizing = "width";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 42";
+						Extent = "354 20";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "to activate the controller.";
+						maxLength = "1024";
+					}
+					new GuiBitmapCtrl(Name : pic_sixenseCalibration_check_2_2)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "center";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "145 0";
+						Extent = "64 64";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						bitmap = "~/data/images/Menu/checkmark.png";
+						wrap = "0";
+					}
+				}
+			}
+			new GuiControl(Name : ctrl_sixenseCalibration_1)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "1";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "30 330";
+				Extent = "360 154";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				new GuiControl(Name : ctrl_sixenseCalibration_1_1)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "width";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "0 0";
+					Extent = "360 64";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					new GuiTextCtrl(Name : txt_sixenseCalibration_1_1_1)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterGreyProfile";
+						HorizSizing = "width";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 20";
+						Extent = "358 20";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "Press any button";
+						maxLength = "1024";
+					}
+					new GuiTextCtrl(Name : txt_sixenseCalibration_1_1_2)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterGreyProfile";
+						HorizSizing = "width";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 42";
+						Extent = "358 20";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "to activate the controller.";
+						maxLength = "1024";
+					}
+					new GuiBitmapCtrl(Name : pic_sixenseCalibration_check_1_1)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "center";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "148 0";
+						Extent = "64 64";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						tooltipprofile = "GuiDefaultProfile";
+						hovertime = "1000";
+						bitmap = "~/data/images/Menu/checkmark.png";
+						wrap = "0";
+					}
+				}
+				new GuiControl(Name : ctrl_sixenseCalibration_1_2)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "width";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "0 70";
+					Extent = "360 64";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					tooltipprofile = "GuiDefaultProfile";
+					hovertime = "1000";
+					new GuiTextCtrl(Name : txt_sixenseCalibration_1_2_1)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterGreyProfile";
+						HorizSizing = "width";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 20";
+						Extent = "360 20";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "Press any button";
+						maxLength = "1024";
+					}
+					new GuiTextCtrl(Name : txt_sixenseCalibration_1_2_2)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterGreyProfile";
+						HorizSizing = "width";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 42";
+						Extent = "360 20";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "to activate the controller.";
+						maxLength = "1024";
+					}
+					new GuiBitmapCtrl(Name : pic_sixenseCalibration_check_1_2)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "center";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "148 0";
+						Extent = "64 64";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						bitmap = "~/data/images/Menu/checkmark.png";
+						wrap = "0";
+					}
+				}
+			}
+			new GuiTextCtrl(Name : txt_sixenseCalibration_title)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "AyimHeader2CenterProfile";
+				HorizSizing = "width";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "0 44";
+				Extent = "768 64";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				text = "Controller Calibration";
+				maxLength = "1024";
+			}
+			new GuiBitmapButtonTextCtrl(Name : btn_sixenseCalibration_dontUse)
+			{
+				canSaveDynamicFields = "0";
+				superclass = "menuItem";
+				isContainer = "0";
+				Profile = "AyimButtonProfile";
+				HorizSizing = "left";
+				VertSizing = "top";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "287 464";
+				Extent = "180 90";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "skipSixenseCalibration();";
+				hovertime = "1000";
+				text = "Cancel";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = "~/data/images/Menu/button_medium1";
+			}
+		}
+	}
+}

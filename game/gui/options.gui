@@ -1,0 +1,1611 @@
+// options.gui.dso
+%guiContent = new GuiControl(Name : menu_options)
+{
+	canSaveDynamicFields = "1";
+	isContainer = "1";
+	Profile = "AyimMenuItemProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	ExtentsAbsolute = "0";
+	BlendColor = "255 255 255 255";
+	Position = "0 0";
+	Extent = "1024 768";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	backButton = "0";
+	new GuiChunkedBitmapCtrl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "0";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "width";
+		VertSizing = "height";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		ExtentsAbsolute = "0";
+		BlendColor = "255 255 255 255";
+		Position = "0 0";
+		Extent = "1024 768";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background.png"'];
+		useVariable = "0";
+		tile = "1";
+		new GuiControl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "0 0";
+			Extent = "800 110";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			new GuiBitmapButtonTextCtrl(Name : tablbl_options_keyboard)
+			{
+				canSaveDynamicFields = "0";
+				superclass = "menuItem";
+				class = "MenuTab";
+				isContainer = "0";
+				Profile = "AyimButtonProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				ExtentsAbsolute = "0";
+				BlendColor = "255 255 255 255";
+				Position = "15 0";
+				Extent = "200 110";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "tablbl_options_keyboard.displayOptions(keyboard);";
+				hovertime = "1000";
+				text = "Keyboard";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = ['"~/"', '$DataFolder', '"/images/Menu/tabsVert"'];
+			}
+			new GuiBitmapButtonTextCtrl(Name : tablbl_options_joystick)
+			{
+				canSaveDynamicFields = "0";
+				superclass = "menuItem";
+				class = "MenuTab";
+				isContainer = "0";
+				Profile = "AyimButtonProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				ExtentsAbsolute = "0";
+				BlendColor = "255 255 255 255";
+				Position = "205 0";
+				Extent = "200 110";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "tablbl_options_joystick.displayOptions(joystick);";
+				hovertime = "1000";
+				text = "Controler";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = ['"~/"', '$DataFolder', '"/images/Menu/tabsVert"'];
+			}
+			new GuiBitmapButtonTextCtrl(Name : tablbl_options_video)
+			{
+				canSaveDynamicFields = "0";
+				superclass = "menuItem";
+				class = "MenuTab";
+				isContainer = "0";
+				Profile = "AyimButtonProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				ExtentsAbsolute = "0";
+				BlendColor = "255 255 255 255";
+				Position = "395 0";
+				Extent = "200 110";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "tablbl_options_video.displayOptions(video);";
+				hovertime = "1000";
+				text = "Video / Audio";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = ['"~/"', '$DataFolder', '"/images/Menu/tabsVert"'];
+			}
+		}
+		new GuiControl(Name : ctrl_options_paper)
+		{
+			canSaveDynamicFields = "1";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "width";
+			VertSizing = "relative";
+			SizeMargin = "0 0";
+			PositionAbsolute = "1";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "0 80";
+			Extent = "1024 688";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			new GuiChunkedBitmapCtrl(Name : "")
+			{
+				canSaveDynamicFields = "1";
+				isContainer = "0";
+				Profile = "GuiDefaultProfile";
+				HorizSizing = "relative";
+				VertSizing = "relative";
+				SizeMargin = "0 0";
+				PositionAbsolute = "1";
+				ExtentsAbsolute = "0";
+				BlendColor = "255 255 255 255";
+				Position = "0 20";
+				Extent = "1024 668";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background_paper.png"'];
+				useVariable = "0";
+				tile = "1";
+			}
+			new GuiChunkedBitmapCtrl(Name : "")
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "GuiDefaultProfile";
+				HorizSizing = "relative";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				ExtentsAbsolute = "0";
+				BlendColor = "255 255 255 255";
+				Position = "0 0";
+				Extent = "1024 64";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background_hTransition.png"'];
+				useVariable = "0";
+				tile = "1";
+			}
+		}
+		new GuiControl(Name : tabBook_options)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "relative";
+			VertSizing = "relative";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "19 102";
+			Extent = "992 603";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			new GuiControl(Name : tab_options_keyboard)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "1";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "relative";
+				VertSizing = "relative";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				ExtentsAbsolute = "0";
+				BlendColor = "255 255 255 255";
+				Position = "0 29";
+				Extent = "992 574";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "0";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				new GuiControl(Name : "")
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "center";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "192 0";
+					Extent = "608 424";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					new GuiTextCtrl(Name : lbl_options_keyboard_rotation)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "360 16";
+						Extent = "144 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "World Rotation";
+						maxLength = "1024";
+					}
+					new GuiTextCtrl(Name : lbl_options_keyboard_rot180)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "396 256";
+						Extent = "176 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "180Â°";
+						maxLength = "1024";
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_keyboard_rot180)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "448 192";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "180";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_keyboard_cw)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "504 128";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "cw";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_keyboard_ccw)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "392 128";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "ccw";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_keyboard_right)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "168 176";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "r";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiTextCtrl(Name : lbl_options_keyboard_right)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "147 239";
+						Extent = "112 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "right";
+						maxLength = "1024";
+					}
+					new GuiTextCtrl(Name : lbl_options_keyboard_left)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "33 243";
+						Extent = "112 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "left";
+						maxLength = "1024";
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_keyboard_left)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "56 176";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "l";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_keyboard_jump)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "112 112";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "j";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiTextCtrl(Name : lbl_options_keyboard_jump)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "56 72";
+						Extent = "176 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "jump";
+						maxLength = "1024";
+					}
+					new GuiTextCtrl(Name : lbl_options_keyboard_movement)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "24 16";
+						Extent = "88 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "movement";
+						maxLength = "1024";
+					}
+					new GuiBitmapCtrl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "400 79";
+						Extent = "50 50";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/rotation_ccw"'];
+						wrap = "0";
+					}
+					new GuiBitmapCtrl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "512 79";
+						Extent = "50 50";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/rotation_cw"'];
+						wrap = "0";
+					}
+					new GuiTextCtrl(Name : lbl_options_keyboard_reset)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "136 311";
+						Extent = "146 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "reset level";
+						maxLength = "1024";
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_keyboard_reset)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "56 300";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						tooltipprofile = "GuiDefaultProfile";
+						hovertime = "1000";
+						text = "reset";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_keyboard_pause)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "286 301";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						tooltipprofile = "GuiDefaultProfile";
+						hovertime = "1000";
+						text = "pause";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiTextCtrl(Name : lbl_options_keyboard_pause)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "366 310";
+						Extent = "44 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "pause";
+						maxLength = "1024";
+					}
+				}
+			}
+			new GuiControl(Name : tab_options_joystick)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "1";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "relative";
+				VertSizing = "relative";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				ExtentsAbsolute = "0";
+				BlendColor = "255 255 255 255";
+				Position = "0 29";
+				Extent = "992 574";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "0";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				new GuiControl(Name : "")
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "center";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "192 0";
+					Extent = "608 424";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					new GuiTextCtrl(Name : lbl_options_joystick_rotation)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "360 16";
+						Extent = "144 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "World Rotation";
+						maxLength = "1024";
+					}
+					new GuiTextCtrl(Name : lbl_options_joystick_rot180)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "396 256";
+						Extent = "176 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "180Â°";
+						maxLength = "1024";
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_joystick_rot180)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "448 192";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "180";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_joystick_cw)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "504 128";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "cw";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_joystick_ccw)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "392 128";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "ccw";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_joystick_right)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "168 176";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "r";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiTextCtrl(Name : lbl_options_joystick_right)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "147 239";
+						Extent = "112 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "right";
+						maxLength = "1024";
+					}
+					new GuiTextCtrl(Name : lbl_options_joystick_left)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "33 243";
+						Extent = "112 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "left";
+						maxLength = "1024";
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_joystick_left)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "56 176";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "l";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_joystick_jump)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "112 112";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "j";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiTextCtrl(Name : lbl_options_joystick_jump)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "56 72";
+						Extent = "176 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "jump";
+						maxLength = "1024";
+					}
+					new GuiTextCtrl(Name : lbl_options_joystick_movement)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "24 16";
+						Extent = "88 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "movement";
+						maxLength = "1024";
+					}
+					new GuiBitmapCtrl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "400 79";
+						Extent = "50 50";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/rotation_ccw"'];
+						wrap = "0";
+					}
+					new GuiBitmapCtrl(Name : "")
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimEmptyProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "512 79";
+						Extent = "50 50";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/rotation_cw"'];
+						wrap = "0";
+					}
+					new GuiTextCtrl(Name : lbl_options_joystick_reset)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "136 311";
+						Extent = "152 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "reset level";
+						maxLength = "1024";
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_joystick_reset)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "56 300";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						tooltipprofile = "GuiDefaultProfile";
+						hovertime = "1000";
+						text = "reset";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_options_joystick_pause)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "ControlsButton";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "286 301";
+						Extent = "70 70";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						tooltipprofile = "GuiDefaultProfile";
+						hovertime = "1000";
+						text = "pause";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiTextCtrl(Name : lbl_options_joystick_pause)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "366 310";
+						Extent = "44 48";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "pause";
+						maxLength = "1024";
+					}
+				}
+			}
+			new GuiControl(Name : tab_options_video)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "1";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "relative";
+				VertSizing = "relative";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				ExtentsAbsolute = "0";
+				BlendColor = "255 255 255 255";
+				Position = "0 29";
+				Extent = "992 574";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "0";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				new GuiTextCtrl(Name : lbl_video_resolution)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "0";
+					Profile = "AyimHeader2Profile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "30 20";
+					Extent = "113 29";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					text = "Resolution";
+					maxLength = "1024";
+				}
+				new GuiControl(Name : "")
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "30 60";
+					Extent = "280 60";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					new GuiTextCtrl(Name : lbl_video_actualResolution)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimMenuTextCenterProfile";
+						HorizSizing = "center";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "0 0";
+						Extent = "280 60";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						tooltipprofile = "GuiDefaultProfile";
+						hovertime = "1000";
+						text = "1024 x 768";
+						maxLength = "1024";
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_video_resLast)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "MenuAction";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "right";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "0 0";
+						Extent = "60 60";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						Command = "MenuAction::toggleResolution(false);";
+						hovertime = "1000";
+						text = "<";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+					new GuiBitmapButtonTextCtrl(Name : btn_video_resNext)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "MenuAction";
+						isContainer = "0";
+						Profile = "AyimButtonProfile";
+						HorizSizing = "left";
+						VertSizing = "bottom";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						ExtentsAbsolute = "0";
+						BlendColor = "255 255 255 255";
+						Position = "220 0";
+						Extent = "60 60";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						Command = "MenuAction::toggleResolution(true);";
+						hovertime = "1000";
+						text = ">";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_small"'];
+					}
+				}
+				new GuiRadioCtrl(Name : btn_video_fullscreenOn)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "0";
+					Profile = "AyimRadioProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "390 60";
+					Extent = "183 60";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					Command = "MenuAction::toggleFullScreen(true);";
+					hovertime = "1000";
+					text = "Fullscreen";
+					groupNum = "2";
+					buttonType = "RadioButton";
+					UseMouseEvents = "0";
+					useInactiveState = "0";
+				}
+				new GuiRadioCtrl(Name : btn_video_fullscreenOff)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "0";
+					Profile = "AyimRadioProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "578 60";
+					Extent = "195 60";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					Command = "MenuAction::toggleFullScreen(false);";
+					hovertime = "1000";
+					text = "Windowed";
+					groupNum = "2";
+					buttonType = "RadioButton";
+					UseMouseEvents = "0";
+					useInactiveState = "0";
+				}
+				new GuiTextCtrl(Name : lbl_performance)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "0";
+					Profile = "AyimHeader2Profile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "30 150";
+					Extent = "146 29";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					text = "Performance";
+					maxLength = "1024";
+				}
+				new GuiRadioCtrl(Name : rd_performance_low)
+				{
+					canSaveDynamicFields = "0";
+					class = "PerformanceRadioButton";
+					isContainer = "0";
+					Profile = "AyimRadioProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "30 190";
+					Extent = "150 60";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					text = "Low";
+					groupNum = "1";
+					buttonType = "RadioButton";
+					UseMouseEvents = "0";
+					useInactiveState = "0";
+				}
+				new GuiRadioCtrl(Name : rd_performance_medium)
+				{
+					canSaveDynamicFields = "0";
+					class = "PerformanceRadioButton";
+					isContainer = "0";
+					Profile = "AyimRadioProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "180 190";
+					Extent = "150 60";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					text = "Medium";
+					groupNum = "1";
+					buttonType = "RadioButton";
+					UseMouseEvents = "0";
+					useInactiveState = "0";
+				}
+				new GuiRadioCtrl(Name : rd_performance_high)
+				{
+					canSaveDynamicFields = "0";
+					class = "PerformanceRadioButton";
+					isContainer = "0";
+					Profile = "AyimRadioProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "330 190";
+					Extent = "150 60";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					text = "High";
+					groupNum = "1";
+					buttonType = "RadioButton";
+					UseMouseEvents = "0";
+					useInactiveState = "0";
+				}
+				new GuiBitmapButtonTextCtrl(Name : btn_performance_custom)
+				{
+					canSaveDynamicFields = "0";
+					superclass = "menuItem";
+					isContainer = "0";
+					Profile = "AyimButtonProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "539 175";
+					Extent = "180 90";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					Command = "menu_options.showCustom();";
+					hovertime = "1000";
+					text = "Customize";
+					groupNum = "-1";
+					buttonType = "PushButton";
+					UseMouseEvents = "0";
+					bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button1"'];
+				}
+				new GuiTextCtrl(Name : lbl_Audio)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "0";
+					Profile = "AyimHeader2Profile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "30 280";
+					Extent = "63 29";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					text = "Audio";
+					maxLength = "1024";
+				}
+				new GuiTextCtrl(Name : lbl_Audio_Sound)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "0";
+					Profile = "AyimMenuTextProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "30 320";
+					Extent = "56 29";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					tooltipprofile = "GuiDefaultProfile";
+					hovertime = "1000";
+					text = "Sound";
+					maxLength = "1024";
+				}
+				new GuiSliderCtrl(Name : sld_audio_effects)
+				{
+					canSaveDynamicFields = "0";
+					class = "AudioSlider";
+					isContainer = "0";
+					Profile = "AyimSliderProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "80 336";
+					Extent = "254 50";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					range = "0.000 1.000";
+					ticks = "0";
+					value = "0.5";
+				}
+				new GuiTextCtrl(Name : lbl_Audio_Music)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "0";
+					Profile = "AyimMenuTextProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "350 320";
+					Extent = "142 29";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					text = "Ambient/Music";
+					maxLength = "1024";
+				}
+				new GuiSliderCtrl(Name : sld_audio_music)
+				{
+					canSaveDynamicFields = "0";
+					class = "AudioSlider";
+					isContainer = "0";
+					Profile = "AyimSliderProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					ExtentsAbsolute = "0";
+					BlendColor = "255 255 255 255";
+					Position = "456 336";
+					Extent = "254 50";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					range = "0.000 1.000";
+					ticks = "0";
+					value = "0.5";
+				}
+			}
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_options_cancel)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "ButtonCancel";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "top";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "644 662";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "cancel";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button1"'];
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_options_ok)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "ButtonOK";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "top";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "816 662";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "OK";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button4"'];
+		}
+	}
+}

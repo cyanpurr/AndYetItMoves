@@ -1,0 +1,375 @@
+// profilesWii.gui.dso
+%guiContent = new GuiControl(Name : menu_switchProfiles)
+{
+	canSaveDynamicFields = "1";
+	isContainer = "1";
+	Profile = "AyimEmptyProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	backButton = "1";
+	new GuiChunkedBitmapCtrl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "0";
+		Profile = "AyimMenuTextCenterProfile";
+		HorizSizing = "width";
+		VertSizing = "height";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 0";
+		Extent = "640 480";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background.png"'];
+		useVariable = "0";
+		tile = "1";
+	}
+	new GuiControl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "center";
+		VertSizing = "center";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 0";
+		Extent = "640 480";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		new GuiBitmapButtonTextCtrl(Name : btn_profile1)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "SwitchProfiles";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "230 60";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "new Profile";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button3"'];
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_profile2)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "SwitchProfiles";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "230 180";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "new Profile";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button4"'];
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_profile3)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "SwitchProfiles";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "230 300";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "new Profile";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button2"'];
+		}
+		new GuiTextCtrl(Name : lbl_playtime_profile1)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextRightWhiteProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "20 67";
+			Extent = "200 34";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "playtime: 3:34";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_deathcount_profile1)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextRightWhiteProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "20 90";
+			Extent = "200 34";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "deathcount: 2345";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_progress_profile1)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextRightWhiteProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "20 113";
+			Extent = "200 34";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "progress 100%";
+			maxLength = "1024";
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_clear_profile1)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "SwitchProfiles";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "410 65";
+			Extent = "130 60";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "clear";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			Command = "SwitchProfiles::deleteProfile(1);";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_medium1"'];
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_clear_profile2)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "SwitchProfiles";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "410 185";
+			Extent = "130 60";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "clear";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			Command = "SwitchProfiles::deleteProfile(2);";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_medium2"'];
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_clear_profile3)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "SwitchProfiles";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "410 305";
+			Extent = "130 60";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "clear";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			Command = "SwitchProfiles::deleteProfile(3);";
+			bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button_medium1"'];
+		}
+		new GuiTextCtrl(Name : lbl_progress_profile2)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextRightWhiteProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "20 232";
+			Extent = "200 34";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "progress 100%";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_deathcount_profile2)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextRightWhiteProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "20 209";
+			Extent = "200 34";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "deathcount: 2345";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_playtime_profile2)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextRightWhiteProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "20 186";
+			Extent = "200 34";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "playtime: 3:34";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_playtime_profile3)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextRightWhiteProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "20 303";
+			Extent = "200 34";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "playtime: 3:34";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_deathcount_profile3)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextRightWhiteProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "20 326";
+			Extent = "200 34";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "deathcount: 2345";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_progress_profile3)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextRightWhiteProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "20 349";
+			Extent = "200 34";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "progress 100%";
+			maxLength = "1024";
+		}
+	}
+}

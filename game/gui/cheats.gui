@@ -1,0 +1,366 @@
+// cheats.gui.dso
+%guiContent = new GuiControl(Name : menu_cheats)
+{
+	canSaveDynamicFields = "1";
+	class = "GameMenu";
+	isContainer = "1";
+	Profile = "AyimMenuItemProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	backButton = "0";
+	new GuiChunkedBitmapCtrl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "0";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "width";
+		VertSizing = "height";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 0";
+		Extent = "640 480";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background.png"'];
+		useVariable = "0";
+		tile = "1";
+	}
+	new GuiControl(Name : ctrl_cheats_paper)
+	{
+		canSaveDynamicFields = "1";
+		isContainer = "1";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "width";
+		VertSizing = "height";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 56";
+		Extent = "640 424";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+	}
+	new GuiChunkedBitmapCtrl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "0";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "relative";
+		VertSizing = "bottom";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 40";
+		Extent = "640 64";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background_hTransition.png"'];
+		useVariable = "0";
+		tile = "1";
+	}
+	new GuiChunkedBitmapCtrl(Name : "")
+	{
+		canSaveDynamicFields = "1";
+		isContainer = "0";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "relative";
+		VertSizing = "height";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 64";
+		Extent = "640 416";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/background_paper.png"'];
+		useVariable = "0";
+		tile = "1";
+	}
+	new GuiControl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimEmptyProfile";
+		HorizSizing = "relative";
+		VertSizing = "relative";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "16 64";
+		Extent = "600 320";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		new GuiControl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "center";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "120 18";
+			Extent = "360 98";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			new GuiTextCtrl(Name : lbl_cheats_speed)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "AyimHeader2Profile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "8 0";
+				Extent = "62 29";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				tooltipprofile = "GuiDefaultProfile";
+				hovertime = "1000";
+				text = "Speed";
+				maxLength = "1024";
+			}
+			new GuiRadioCtrl(Name : btn_cheats_normalSpeed)
+			{
+				canSaveDynamicFields = "1";
+				class = "TimeScale";
+				subClass = "CheatButton";
+				isContainer = "0";
+				Profile = "AyimRadioProfile";
+				HorizSizing = "right";
+				VertSizing = "top";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "120 34";
+				Extent = "120 64";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "btn_cheats_normalSpeed.setSpeed(1);";
+				hovertime = "1000";
+				text = "100%";
+				groupNum = "2";
+				buttonType = "RadioButton";
+				UseMouseEvents = "1";
+				useInactiveState = "0";
+			}
+			new GuiRadioCtrl(Name : btn_cheats_halfSpeed)
+			{
+				canSaveDynamicFields = "1";
+				class = "TimeScale";
+				subClass = "CheatButton";
+				isContainer = "0";
+				Profile = "AyimRadioProfile";
+				HorizSizing = "right";
+				VertSizing = "top";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "0 34";
+				Extent = "120 64";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "btn_cheats_halfSpeed.setSpeed(0);";
+				tooltipprofile = "GuiDefaultProfile";
+				hovertime = "1000";
+				text = "70%";
+				groupNum = "2";
+				buttonType = "RadioButton";
+				UseMouseEvents = "1";
+				useInactiveState = "0";
+			}
+			new GuiRadioCtrl(Name : btn_cheats_doubleSpeed)
+			{
+				canSaveDynamicFields = "1";
+				class = "TimeScale";
+				subClass = "CheatButton";
+				isContainer = "0";
+				Profile = "AyimRadioProfile";
+				HorizSizing = "right";
+				VertSizing = "top";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "240 34";
+				Extent = "120 64";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "btn_cheats_doubleSpeed.setSpeed(2);";
+				hovertime = "1000";
+				text = "150%";
+				groupNum = "2";
+				buttonType = "RadioButton";
+				UseMouseEvents = "01";
+				useInactiveState = "0";
+			}
+		}
+		new GuiCheckBoxCtrl(Name : chb_cheats_fixedCamera)
+		{
+			canSaveDynamicFields = "1";
+			class = "CheatButton";
+			isContainer = "0";
+			Profile = "AyimCheckBoxProfile";
+			HorizSizing = "center";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "120 200";
+			Extent = "360 56";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "Button";
+			groupNum = "-1";
+			buttonType = "ToggleButton";
+			UseMouseEvents = "1";
+			useInactiveState = "0";
+		}
+		new GuiCheckBoxCtrl(Name : chb_cheats_freeRotation)
+		{
+			canSaveDynamicFields = "1";
+			class = "CheatButton";
+			isContainer = "0";
+			Profile = "AyimCheckBoxProfile";
+			HorizSizing = "center";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "120 128";
+			Extent = "360 56";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "Button";
+			groupNum = "-1";
+			buttonType = "ToggleButton";
+			UseMouseEvents = "1";
+			useInactiveState = "0";
+		}
+		new GuiTextCtrl(Name : lbl_cheats_unlock)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextCenterProfile";
+			HorizSizing = "center";
+			VertSizing = "top";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "0 288";
+			Extent = "600 24";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "Achieve 'Frozen' to unlock this mode";
+			maxLength = "1024";
+		}
+	}
+	new GuiBitmapButtonTextCtrl(Name : btn_cheats_cancel)
+	{
+		canSaveDynamicFields = "0";
+		superclass = "menuItem";
+		class = "ButtonCancel";
+		isContainer = "0";
+		Profile = "AyimButtonProfile";
+		HorizSizing = "left";
+		VertSizing = "top";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "260 372";
+		Extent = "180 90";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		text = "quit";
+		groupNum = "-1";
+		buttonType = "PushButton";
+		UseMouseEvents = "0";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button4"'];
+	}
+	new GuiBitmapButtonTextCtrl(Name : btn_cheats_ok)
+	{
+		canSaveDynamicFields = "0";
+		superclass = "menuItem";
+		class = "ButtonOK";
+		isContainer = "0";
+		Profile = "AyimButtonProfile";
+		HorizSizing = "left";
+		VertSizing = "top";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "440 372";
+		Extent = "180 90";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		text = "Create Profile";
+		groupNum = "-1";
+		buttonType = "PushButton";
+		UseMouseEvents = "0";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/button1"'];
+	}
+	new GuiTextCtrl(Name : lbl_cheats_titel)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "0";
+		Profile = "AyimHeader1CenterProfile";
+		HorizSizing = "center";
+		VertSizing = "bottom";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 16";
+		Extent = "639 29";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		tooltipprofile = "AyimMenuTextProfile";
+		ToolTip = "cave 1";
+		hovertime = "1000";
+		text = "Cheats";
+		maxLength = "1024";
+	}
+}

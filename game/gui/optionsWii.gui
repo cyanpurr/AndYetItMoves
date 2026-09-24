@@ -1,0 +1,633 @@
+// optionsWii.gui.dso
+%guiContent = new GuiControl(Name : menu_options)
+{
+	canSaveDynamicFields = "1";
+	isContainer = "1";
+	Profile = "AyimMenuItemProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	backButton = "0";
+	new GuiChunkedBitmapCtrl(Name : "")
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "0";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "width";
+		VertSizing = "height";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 0";
+		Extent = "640 480";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		bitmap = "~/wiiData/images/Menu/background.png";
+		useVariable = "0";
+		tile = "1";
+		new GuiControl(Name : "")
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "0 0";
+			Extent = "800 110";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			new GuiBitmapButtonTextCtrl(Name : tablbl_options_joystick)
+			{
+				canSaveDynamicFields = "0";
+				superclass = "menuItem";
+				class = "MenuTab";
+				isContainer = "0";
+				Profile = "AyimButtonProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "15 0";
+				Extent = "200 110";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "tablbl_options_joystick.displayOptions(joystick);";
+				hovertime = "1000";
+				text = "Controler";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = "~/wiiData/images/Menu/tabsVert";
+			}
+			new GuiBitmapButtonTextCtrl(Name : tablbl_options_video)
+			{
+				canSaveDynamicFields = "0";
+				superclass = "menuItem";
+				class = "MenuTab";
+				isContainer = "0";
+				Profile = "AyimButtonProfile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "208 0";
+				Extent = "200 110";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "tablbl_options_video.displayOptions(video);";
+				hovertime = "1000";
+				text = "Video / Audio";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = "~/wiiData/images/Menu/tabsVert";
+			}
+		}
+		new GuiControl(Name : ctrl_options_paper)
+		{
+			canSaveDynamicFields = "1";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "width";
+			VertSizing = "relative";
+			SizeMargin = "0 0";
+			PositionAbsolute = "1";
+			Position = "0 80";
+			Extent = "640 400";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			new GuiChunkedBitmapCtrl(Name : "")
+			{
+				canSaveDynamicFields = "1";
+				isContainer = "0";
+				Profile = "GuiDefaultProfile";
+				HorizSizing = "relative";
+				VertSizing = "relative";
+				SizeMargin = "0 0";
+				PositionAbsolute = "1";
+				Position = "0 20";
+				Extent = "640 380";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				bitmap = "~/wiiData/images/Menu/background_paper.png";
+				useVariable = "0";
+				tile = "1";
+			}
+			new GuiChunkedBitmapCtrl(Name : "")
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "GuiDefaultProfile";
+				HorizSizing = "relative";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "0 0";
+				Extent = "640 64";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				bitmap = "~/wiiData/images/Menu/background_hTransition.png";
+				useVariable = "0";
+				tile = "1";
+			}
+		}
+		new GuiControl(Name : tabBook_options)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "relative";
+			VertSizing = "relative";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "12 64";
+			Extent = "620 376";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			new GuiControl(Name : tab_options_joystick)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "1";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "relative";
+				VertSizing = "relative";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "30 45";
+				Extent = "588 358";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				new GuiControl(Name : "")
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "relative";
+					VertSizing = "relative";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "0 0";
+					Extent = "172 116";
+					MinExtent = "172 116";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					new GuiBitmapButtonTextCtrl(Name : btn_options_driver)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "InputSelectButton";
+						isContainer = "0";
+						Profile = "AyimLevelButtonProfile";
+						HorizSizing = "center";
+						VertSizing = "center";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 0";
+						Extent = "172 116";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = "~/wiiData/images/Menu/input/driver";
+					}
+				}
+				new GuiControl(Name : "")
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "relative";
+					VertSizing = "relative";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "180 0";
+					Extent = "172 116";
+					MinExtent = "172 116";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					new GuiBitmapButtonTextCtrl(Name : btn_options_grabber)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "InputSelectButton";
+						isContainer = "0";
+						Profile = "AyimLevelButtonProfile";
+						HorizSizing = "center";
+						VertSizing = "center";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 0";
+						Extent = "172 116";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = "~/wiiData/images/Menu/input/grabber";
+					}
+				}
+				new GuiControl(Name : "")
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "relative";
+					VertSizing = "relative";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "0 115";
+					Extent = "172 116";
+					MinExtent = "172 116";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					new GuiBitmapButtonTextCtrl(Name : btn_options_keyhole)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "InputSelectButton";
+						isContainer = "0";
+						Profile = "AyimLevelButtonProfile";
+						HorizSizing = "center";
+						VertSizing = "center";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 0";
+						Extent = "172 116";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = "~/wiiData/images/Menu/input/keyhole";
+					}
+				}
+				new GuiControl(Name : "")
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "relative";
+					VertSizing = "relative";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "180 115";
+					Extent = "172 116";
+					MinExtent = "172 116";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					new GuiBitmapButtonTextCtrl(Name : btn_options_classic)
+					{
+						canSaveDynamicFields = "0";
+						superclass = "menuItem";
+						class = "InputSelectButton";
+						isContainer = "0";
+						Profile = "AyimLevelButtonProfile";
+						HorizSizing = "center";
+						VertSizing = "center";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 0";
+						Extent = "172 116";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						groupNum = "-1";
+						buttonType = "PushButton";
+						UseMouseEvents = "0";
+						bitmap = "~/wiiData/images/Menu/input/classic";
+					}
+				}
+				new GuiCheckBoxCtrl(Name : chb_options_invert)
+				{
+					canSaveDynamicFields = "0";
+					class = "InvertCheckbox";
+					isContainer = "0";
+					Profile = "AyimCheckBoxProfile";
+					HorizSizing = "relative";
+					VertSizing = "relative";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "0 224";
+					Extent = "584 56";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					tooltipprofile = "GuiDefaultProfile";
+					hovertime = "1000";
+					text = "invert world rotation";
+					groupNum = "-1";
+					buttonType = "ToggleButton";
+					UseMouseEvents = "0";
+					useInactiveState = "0";
+				}
+				new GuiControl(Name : "")
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "1";
+					Profile = "AyimEmptyProfile";
+					HorizSizing = "relative";
+					VertSizing = "relative";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "390 0";
+					Extent = "200 270";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					new GuiTextCtrl(Name : lbl_sensitivity)
+					{
+						canSaveDynamicFields = "0";
+						isContainer = "0";
+						Profile = "AyimHeader2Profile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 0";
+						Extent = "179 29";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "Empfindlichkeit";
+						maxLength = "1024";
+					}
+					new GuiRadioCtrl(Name : rd_sensitivity_low)
+					{
+						canSaveDynamicFields = "0";
+						class = "SensitivityRadioButton";
+						isContainer = "0";
+						Profile = "AyimRadioProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 40";
+						Extent = "150 60";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "Low";
+						groupNum = "1";
+						buttonType = "RadioButton";
+						UseMouseEvents = "0";
+						useInactiveState = "0";
+					}
+					new GuiRadioCtrl(Name : rd_sensitivity_medium)
+					{
+						canSaveDynamicFields = "0";
+						class = "SensitivityRadioButton";
+						isContainer = "0";
+						Profile = "AyimRadioProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 100";
+						Extent = "150 60";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "Medium";
+						groupNum = "1";
+						buttonType = "RadioButton";
+						UseMouseEvents = "0";
+						useInactiveState = "0";
+					}
+					new GuiRadioCtrl(Name : rd_sensitivity_high)
+					{
+						canSaveDynamicFields = "0";
+						class = "SensitivityRadioButton";
+						isContainer = "0";
+						Profile = "AyimRadioProfile";
+						HorizSizing = "relative";
+						VertSizing = "relative";
+						SizeMargin = "0 0";
+						PositionAbsolute = "0";
+						Position = "0 160";
+						Extent = "150 60";
+						MinExtent = "8 2";
+						canSave = "1";
+						Visible = "1";
+						AlwaysUseMouseEvents = "0";
+						hovertime = "1000";
+						text = "High";
+						groupNum = "1";
+						buttonType = "RadioButton";
+						UseMouseEvents = "0";
+						useInactiveState = "0";
+					}
+				}
+			}
+			new GuiControl(Name : tab_options_video)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "1";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "relative";
+				VertSizing = "relative";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "0 18";
+				Extent = "588 358";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "0";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				new GuiTextCtrl(Name : lbl_Audio_Sound)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "0";
+					Profile = "AyimMenuTextProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "50 50";
+					Extent = "56 29";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					tooltipprofile = "GuiDefaultProfile";
+					hovertime = "1000";
+					text = "Sound";
+					maxLength = "1024";
+				}
+				new GuiSliderCtrl(Name : sld_audio_effects)
+				{
+					canSaveDynamicFields = "0";
+					class = "AudioSlider";
+					isContainer = "0";
+					Profile = "AyimSliderProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "50 80";
+					Extent = "254 50";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					range = "0.000 1.000";
+					ticks = "0";
+					value = "0.5";
+				}
+				new GuiTextCtrl(Name : lbl_Audio_Music)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "0";
+					Profile = "AyimMenuTextProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "50 160";
+					Extent = "142 29";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					text = "Ambient/Music";
+					maxLength = "1024";
+				}
+				new GuiSliderCtrl(Name : sld_audio_music)
+				{
+					canSaveDynamicFields = "0";
+					class = "AudioSlider";
+					isContainer = "0";
+					Profile = "AyimSliderProfile";
+					HorizSizing = "right";
+					VertSizing = "bottom";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "50 190";
+					Extent = "254 50";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					range = "0.000 1.000";
+					ticks = "0";
+					value = "0.5";
+				}
+			}
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_options_cancel)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "ButtonCancel";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "top";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "260 372";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "cancel";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = "~/wiiData/images/Menu/button1";
+		}
+		new GuiBitmapButtonTextCtrl(Name : btn_options_ok)
+		{
+			canSaveDynamicFields = "0";
+			superclass = "menuItem";
+			class = "ButtonOK";
+			isContainer = "0";
+			Profile = "AyimButtonProfile";
+			HorizSizing = "left";
+			VertSizing = "top";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "440 372";
+			Extent = "180 90";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "OK";
+			groupNum = "-1";
+			buttonType = "PushButton";
+			UseMouseEvents = "0";
+			bitmap = "~/wiiData/images/Menu/button4";
+		}
+	}
+}

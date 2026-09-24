@@ -1,0 +1,283 @@
+// levelDetailWii.gui.dso
+%guiContent = new GuiControl(Name : menu_levelDetail)
+{
+	canSaveDynamicFields = "0";
+	class = "GameMenu";
+	isContainer = "1";
+	Profile = "AyimMenuItemProfile";
+	HorizSizing = "width";
+	VertSizing = "height";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	Position = "0 0";
+	Extent = "640 480";
+	MinExtent = "8 8";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	new GuiChunkedBitmapCtrl(Name : ctrl_levelDetail_background)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "0";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "width";
+		VertSizing = "height";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		Position = "0 0";
+		Extent = "640 480";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		hovertime = "1000";
+		bitmap = "~/wiiData/images/Menu/background.png";
+		useVariable = "0";
+		tile = "1";
+		new GuiControl(Name : ctrl_levelDetail_paper)
+		{
+			canSaveDynamicFields = "1";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "width";
+			VertSizing = "height";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			Position = "0 56";
+			Extent = "800 544";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			new GuiChunkedBitmapCtrl(Name : "")
+			{
+				canSaveDynamicFields = "1";
+				isContainer = "0";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "relative";
+				VertSizing = "relative";
+				SizeMargin = "0 0";
+				PositionAbsolute = "1";
+				Position = "0 20";
+				Extent = "800 524";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				bitmap = "~/wiiData/images/Menu/background_paper.png";
+				useVariable = "0";
+				tile = "1";
+			}
+			new GuiChunkedBitmapCtrl(Name : "")
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "relative";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "0 0";
+				Extent = "800 64";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				bitmap = "~/wiiData/images/Menu/background_hTransition.png";
+				useVariable = "0";
+				tile = "1";
+			}
+		}
+		new GuiControl(Name : "")
+		{
+			canSaveDynamicFields = "1";
+			isContainer = "1";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "relative";
+			VertSizing = "height";
+			SizeMargin = "0 0";
+			PositionAbsolute = "1";
+			Position = "10 0";
+			Extent = "620 480";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			new GuiTextCtrl(Name : lbl_levelDetail_name)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "AyimHeader2CenterProfile";
+				HorizSizing = "center";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "25 22";
+				Extent = "580 29";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				tooltipprofile = "GuiDefaultProfile";
+				ToolTip = "cave 1";
+				hovertime = "1000";
+				text = "levelName";
+				maxLength = "1024";
+			}
+			new GuiBitmapButtonTextCtrl(Name : btn_levelDetail_previousLevel)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "AyimButtonHeader1Profile";
+				HorizSizing = "right";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "40 2";
+				Extent = "60 60";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "menu_levelDetail.changeLevel(false);";
+				hovertime = "1000";
+				text = "<";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = "~/wiiData/images/Menu/button_small";
+			}
+			new GuiBitmapButtonTextCtrl(Name : btn_levelDetail_nextLevel)
+			{
+				canSaveDynamicFields = "0";
+				isContainer = "0";
+				Profile = "AyimButtonHeader1Profile";
+				HorizSizing = "left";
+				VertSizing = "bottom";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "520 2";
+				Extent = "60 60";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "menu_levelDetail.changeLevel(true);";
+				hovertime = "1000";
+				text = ">";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = "~/wiiData/images/Menu/button_small";
+			}
+			new GuiControl(Name : "")
+			{
+				canSaveDynamicFields = "1";
+				isContainer = "1";
+				Profile = "AyimEmptyProfile";
+				HorizSizing = "width";
+				VertSizing = "height";
+				SizeMargin = "0 0";
+				PositionAbsolute = "1";
+				Position = "0 72";
+				Extent = "620 328";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				tooltipprofile = "GuiDefaultProfile";
+				hovertime = "1000";
+				new GuiControl(Name : ctrl_levelDetail_main)
+				{
+					canSaveDynamicFields = "1";
+					isContainer = "1";
+					Profile = "AyimBackgroundProfile";
+					HorizSizing = "width";
+					VertSizing = "relative";
+					SizeMargin = "0 0";
+					PositionAbsolute = "1";
+					Position = "2 0";
+					Extent = "616 325";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					tooltipprofile = "GuiDefaultProfile";
+					hovertime = "1000";
+				}
+				new GuiTextCtrl(Name : lbl_levelDetail_noscores)
+				{
+					canSaveDynamicFields = "0";
+					isContainer = "0";
+					Profile = "AyimHeader1CenterProfile";
+					HorizSizing = "width";
+					VertSizing = "center";
+					SizeMargin = "0 0";
+					PositionAbsolute = "0";
+					Position = "5 149";
+					Extent = "609 29";
+					MinExtent = "8 2";
+					canSave = "1";
+					Visible = "1";
+					AlwaysUseMouseEvents = "0";
+					hovertime = "1000";
+					maxLength = "1024";
+				}
+			}
+			new GuiBitmapButtonTextCtrl(Name : btn_levelDetail_back)
+			{
+				canSaveDynamicFields = "0";
+				superclass = "menuItem";
+				class = "ButtonBack";
+				isContainer = "0";
+				Profile = "AyimButtonProfile";
+				HorizSizing = "left";
+				VertSizing = "top";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "320 380";
+				Extent = "130 60";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				hovertime = "1000";
+				text = "Back";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = "~/wiiData/images/Menu/button_medium2";
+			}
+			new GuiBitmapButtonTextCtrl(Name : btn_levelDetail_competeWoGhost)
+			{
+				canSaveDynamicFields = "0";
+				superclass = "menuItem";
+				isContainer = "0";
+				Profile = "AyimButtonProfile";
+				HorizSizing = "left";
+				VertSizing = "top";
+				SizeMargin = "0 0";
+				PositionAbsolute = "0";
+				Position = "450 380";
+				Extent = "130 60";
+				MinExtent = "8 2";
+				canSave = "1";
+				Visible = "1";
+				AlwaysUseMouseEvents = "0";
+				Command = "menu_levelDetail.showResetNotification(false);";
+				tooltipprofile = "GuiDefaultProfile";
+				hovertime = "1000";
+				text = "No Ghost";
+				groupNum = "-1";
+				buttonType = "PushButton";
+				UseMouseEvents = "0";
+				bitmap = "~/wiiData/images/Menu/button_medium2";
+			}
+		}
+	}
+}

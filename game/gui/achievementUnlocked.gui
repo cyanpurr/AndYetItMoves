@@ -1,0 +1,105 @@
+// achievementUnlocked.gui.dso
+%guiContent = new GuiControl(Name : popup_unlocked)
+{
+	canSaveDynamicFields = "0";
+	isContainer = "1";
+	Profile = "GuiDefaultProfile";
+	HorizSizing = "right";
+	VertSizing = "bottom";
+	SizeMargin = "0 0";
+	PositionAbsolute = "0";
+	ExtentsAbsolute = "0";
+	BlendColor = "255 255 255 255";
+	Position = "0 0";
+	Extent = "1024 768";
+	MinExtent = "8 2";
+	canSave = "1";
+	Visible = "1";
+	AlwaysUseMouseEvents = "0";
+	hovertime = "1000";
+	new GuiBitmapCtrl(Name : ctrl_unlocked_main)
+	{
+		canSaveDynamicFields = "0";
+		isContainer = "1";
+		Profile = "AyimBackgroundProfile";
+		HorizSizing = "center";
+		VertSizing = "top";
+		SizeMargin = "0 0";
+		PositionAbsolute = "0";
+		ExtentsAbsolute = "0";
+		BlendColor = "255 255 255 255";
+		Position = "249 649";
+		Extent = "525 120";
+		MinExtent = "8 2";
+		canSave = "1";
+		Visible = "1";
+		AlwaysUseMouseEvents = "0";
+		tooltipprofile = "GuiDefaultProfile";
+		hovertime = "1000";
+		bitmap = ['"~/"', '$DataFolder', '"/images/Menu/achievedDisplay.png"'];
+		wrap = "0";
+		new GuiBitmapCtrl(Name : bm_unlocked)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimEmptyProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "40 40";
+			Extent = "64 64";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			wrap = "0";
+		}
+		new GuiTextCtrl(Name : lbl_unlocked_unlocked)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimMenuTextNoAutoSizeProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "114 40";
+			Extent = "383 29";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			tooltipprofile = "GuiDefaultProfile";
+			hovertime = "1000";
+			text = "You Unlocked";
+			maxLength = "1024";
+		}
+		new GuiTextCtrl(Name : lbl_unlocked_name)
+		{
+			canSaveDynamicFields = "0";
+			isContainer = "0";
+			Profile = "AyimHeader2CenterProfile";
+			HorizSizing = "right";
+			VertSizing = "bottom";
+			SizeMargin = "0 0";
+			PositionAbsolute = "0";
+			ExtentsAbsolute = "0";
+			BlendColor = "255 255 255 255";
+			Position = "112 63";
+			Extent = "389 45";
+			MinExtent = "8 2";
+			canSave = "1";
+			Visible = "1";
+			AlwaysUseMouseEvents = "0";
+			hovertime = "1000";
+			text = "bla";
+			maxLength = "1024";
+		}
+	}
+}
